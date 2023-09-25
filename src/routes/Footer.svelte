@@ -6,7 +6,7 @@
 
 <footer class="bg-gray-800 py-4">
   <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-    <div class="mb-4 md:mb-0">
+    <div class="mb-4 md:mb-0 flex">
       <a href="https://www.linkedin.com/in/manuel-souto-juan/" target="_blank" class="text-white mr-4">
         <img src={linkedin_logo} alt="LinkedIn" class="w-6 h-6">
       </a>
@@ -17,7 +17,7 @@
         <img src={email_logo} alt="Email" class="w-6 h-6">
       </a>
     </div>
-    <div class="md:hidden">
+    <div class="md:flex">
       <a href="/" class="text-white">Home</a>
       <a href="/projects" class="text-white ml-4">Projects</a>
       <a href="/blog" class="text-white ml-4">Blog</a>
