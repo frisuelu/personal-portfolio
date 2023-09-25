@@ -4,7 +4,7 @@
   import email_logo from "$lib/images/email.svg";
 </script>
 
-<footer class="bg-gray-800 py-4">
+<footer class="bg-gray-600 py-4">
   <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
     <div class="mb-4 md:mb-0 flex">
       <a href="https://www.linkedin.com/in/manuel-souto-juan/" target="_blank" class="text-white mr-4">
