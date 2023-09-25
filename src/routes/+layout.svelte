@@ -5,6 +5,11 @@
   import Footer from "./Footer.svelte";
 </script>
 
+<link
+  rel="stylesheet"
+  href="https://cdn.tailgrids.com/tailgrids-fallback.css"
+/>
+
 <div class="app">
  <Header/> 
   <main>

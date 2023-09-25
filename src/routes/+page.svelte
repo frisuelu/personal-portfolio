@@ -1,3 +1,8 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.tailgrids.com/tailgrids-fallback.css"
+/>
+
 <svelte:head>
   <title>Home</title>
   <meta name="description" content="Svelte demo app" />
