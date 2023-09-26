@@ -1,14 +1,13 @@
 ---
-title: TRANSFORMERS: multi-purpose AI models in disguise
-date: 2022-01-10
+title: TRANSFORMERS - multi-purpose AI models in disguise I
+date: "2022-01-10"
 ---
 
-TRANSFORMERS: multi-purpose AI models in disguise
-=================================================
+# TRANSFORMERS - multi-purpose AI models in disguise
 
 Novel applications of this powerful architecture set the bar for future AI advances.
 
-* * *
+---
 
 ### **TRANSFORMERS: multi-purpose AI models in disguise**
 
@@ -27,7 +26,7 @@ So, a brief introduction to the Transformer, its beginnings, and the most common
 It should be noted that AI solutions sometimes lack the responsibility and rigour required when practising _Data Science_. The undesired effect is that models can retain the inherent bias of the data sets used to train them, and this can lead to fiascos such as [Google’s Photos app](https://www.bbc.com/news/technology-33347866). I recommend you check out the article written by my colleague [Jesus Templado](https://medium.com/u/10e1f45c4bb2) on responsible AI and some hands-on criteria to follow when ideating, training or fine-tuning these models.
 
 [**The opportunity to apply responsible AI (Part I): Why is transparent AI a hot topic these days?**  
-_By Jesús Templado, Director at Bedrock_medium.com](https://medium.com/bedrockdbd/part-i-why-is-responsible-ai-a-hot-topic-these-days-da037dbee705 "https://medium.com/bedrockdbd/part-i-why-is-responsible-ai-a-hot-topic-these-days-da037dbee705")[](https://medium.com/bedrockdbd/part-i-why-is-responsible-ai-a-hot-topic-these-days-da037dbee705)
+\_By Jesús Templado, Director at Bedrock_medium.com](https://medium.com/bedrockdbd/part-i-why-is-responsible-ai-a-hot-topic-these-days-da037dbee705 "https://medium.com/bedrockdbd/part-i-why-is-responsible-ai-a-hot-topic-these-days-da037dbee705")[](https://medium.com/bedrockdbd/part-i-why-is-responsible-ai-a-hot-topic-these-days-da037dbee705)
 
 ### TRANSFORMER: APPEARANCE & RESEARCH
 
@@ -74,15 +73,15 @@ from transformers import MarianMTModel, MarianTokenizer
 import torch
 
 \# Load a pretrained "English to Spanish" model  
-tokenizer = MarianTokenizer.from\_pretrained("Helsinki-NLP/opus-mt-en-es")
+tokenizer = MarianTokenizer.from_pretrained("Helsinki-NLP/opus-mt-en-es")
 
-model = MarianMTModel.from\_pretrained("Helsinki-NLP/opus-mt-en-es")
+model = MarianMTModel.from_pretrained("Helsinki-NLP/opus-mt-en-es")
 
 \# Input a sentence  
-input = tokenizer("Transformers are a really cool tool for multiple NLP tasks, but they can do so much more!!", return\_tensors = 'pt', padding = True)
+input = tokenizer("Transformers are a really cool tool for multiple NLP tasks, but they can do so much more!!", return_tensors = 'pt', padding = True)
 
 \# Print the results  
-print(tokenizer.batch\_decode(model.generate(\*\*input), skip\_special\_tokens=True)\[0\])
+print(tokenizer.batch_decode(model.generate(\*\*input), skip_special_tokens=True)\[0\])
 
 The output is the sentence: **Los transformadores son una herramienta realmente genial para múltiples tareas NLP, pero pueden hacer mucho más!!**
 
@@ -91,7 +90,7 @@ Our team at [Bedrock](https://www.bedrockdbd.com/) has been able to leverage the
 Stay tuned for the next part of this article, where we will present cutting-edge uses of the Transformer in other areas of application of AI, where previously other models reigned supreme.
 
 [**TRANSFORMERS: multi-purpose AI models in disguise**  
-_Novel applications of this powerful architecture set the bar for future AI advances._manuel-souto.medium.com](https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-afbc5b46fbc8 "https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-afbc5b46fbc8")[](https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-afbc5b46fbc8)
+\_Novel applications of this powerful architecture set the bar for future AI advances.\_manuel-souto.medium.com](https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-afbc5b46fbc8 "https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-afbc5b46fbc8")[](https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-afbc5b46fbc8)
 
 By [Manuel Souto Juan](https://medium.com/@manuel-souto) on [January 10, 2022](https://medium.com/p/978c48fdd973).
 

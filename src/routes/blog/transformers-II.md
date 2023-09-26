@@ -1,14 +1,13 @@
 ---
-title: TRANSFORMERS: multi-purpose AI models in disguise
-date: 2022-01-10
+title: TRANSFORMERS - multi-purpose AI models in disguise II
+date: "2022-01-10"
 ---
 
-TRANSFORMERS: multi-purpose AI models in disguise
-=================================================
+# TRANSFORMERS - multi-purpose AI models in disguise
 
 Novel applications of this powerful architecture set the bar for future AI advances.
 
-* * *
+---
 
 ### TRANSFORMERS: multi-purpose AI models in disguise
 
@@ -19,7 +18,7 @@ Novel applications of this powerful architecture set the bar for future AI advan
 In the first part of this article, we took a look at the Transformer model and its main use cases related to NLP, which have hopefully broadened your understanding of the topic at hand. If you have not read it yet, I suggest you give it a brief glance first since it will help you understand its current standing.
 
 [**TRANSFORMERS: multi-purpose AI models in disguise**  
-_Novel applications of this powerful architecture set the bar for future AI advances._manuel-souto.medium.com](https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-978c48fdd973 "https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-978c48fdd973")[](https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-978c48fdd973)
+\_Novel applications of this powerful architecture set the bar for future AI advances.\_manuel-souto.medium.com](https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-978c48fdd973 "https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-978c48fdd973")[](https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-978c48fdd973)
 
 In the second part of this article, we will present novel model architectures and research employing Transformers in several fields unrelated to NLP, as well as showing some code examples of the capabilities of these remarkable new approaches.
 
@@ -27,11 +26,11 @@ In the second part of this article, we will present novel model architectures an
 
 As previously mentioned, the Transformer architecture provides a suitable framework designed to take advantage of long-term relationships between words. This allows the model to find patterns and meanings in the sentences and makes it suited for many tasks in NLP. The most common ones are:
 
-*   **Text classification** into categories, such as obtaining the sentiment of a text.
-*   **Question answering**, where the model can extract information from a text when prompted to do so.
-*   **Text generation**, such as GPT-3.
-*   **Translation**; Google Translate already employs this technology.
-*   **Summarization** of a text into few words or sentences.
+- **Text classification** into categories, such as obtaining the sentiment of a text.
+- **Question answering**, where the model can extract information from a text when prompted to do so.
+- **Text generation**, such as GPT-3.
+- **Translation**; Google Translate already employs this technology.
+- **Summarization** of a text into few words or sentences.
 
 After the success of the Transformer model applied to NLP tasks, people began to wonder: If it can find long-term relationships in the data and be trained efficiently, then **could it be as efficient in other tasks besides NLP**? This is the start of the current movement of research, where this model is used as the _backbone_ for many algorithms in AI and _machine learning_ previously dominated by other techniques. Some amazing contributions in other AI fields are:
 
@@ -67,11 +66,12 @@ For most of these models, the code and training data are publicly available and 
 
 First, install the dependencies and load an image of your choosing using its URL:
 
+```python
 \# Install dependencies  
 !pip install -q transformers  
 !pip install -q timm
 
-\# Load the needed libraries to load images   
+\# Load the needed libraries to load images  
 from PIL import Image  
 import requests
 
@@ -82,6 +82,7 @@ im = Image.open(requests.get(url, stream=True).raw)
 
 \# Show the image  
 im
+```
 
 ![](https://cdn-images-1.medium.com/max/800/0*skxNs07GaWuj_CCm)
 
@@ -89,24 +90,29 @@ Figure 5: Image of a park.
 
 Then, we apply the feature extractor to resize and normalize the image so the model can interpret it correctly. This will use the simplest DETR model, with the ResNet-50 backbone:
 
+```python
 from transformers import DetrFeatureExtractor
 
-feature\_extractor = DetrFeatureExtractor.from\_pretrained("facebook/detr-resnet-50")
+feature_extractor = DetrFeatureExtractor.from_pretrained("facebook/detr-resnet-50")
 
-encoding = feature\_extractor(im, return\_tensors="pt")
+encoding = feature_extractor(im, return_tensors="pt")
 
 encoding.keys()
+```
 
 Next, load the pre-trained model and pass the image through:
 
+```python
 from transformers import DetrForObjectDetection
 
-model = DetrForObjectDetection.from\_pretrained("facebook/detr-resnet-50")
+model = DetrForObjectDetection.from_pretrained("facebook/detr-resnet-50")
 
 outputs = model(\*\*encoding)
+```
 
 And that’s it! Now we only have to interpret the results and represent the detected objects with some boxes:
 
+```python 
 import matplotlib.pyplot as plt
 
 \# colors for visualization
@@ -116,24 +122,24 @@ COLORS = \[\[0.000, 0.447, 0.741\], \[0.850, 0.325, 0.098\], \[0.929, 0.694, 0.1
 \[0.494, 0.184, 0.556\], \[0.466, 0.674, 0.188\], \[0.301, 0.745, 0.933\]\]
 
 \# Define an auxiliary plotting function  
-def plot\_results(pil\_img, prob, boxes):
+def plot_results(pil_img, prob, boxes):
 
-   plt.figure(figsize=(16,10))  
-   plt.imshow(pil\_img)
+plt.figure(figsize=(16,10))  
+ plt.imshow(pil_img)
 
-   ax = plt.gca()  
-   colors = COLORS \* 100
+ax = plt.gca()  
+ colors = COLORS \* 100
 
-   for p, (xmin, ymin, xmax, ymax), c in zip(prob, boxes.tolist(),   colors):
+for p, (xmin, ymin, xmax, ymax), c in zip(prob, boxes.tolist(), colors):
 
       ax.add\_patch(plt.Rectangle((xmin, ymin), xmax - xmin, ymax -ymin, fill=False, color=c, linewidth=3))
 
-      cl = p.argmax()  
-      text = f'{model.config.id2label\[cl.item()\]}: {p\[cl\]:0.2f}'   
+      cl = p.argmax()
+      text = f'{model.config.id2label\[cl.item()\]}: {p\[cl\]:0.2f}'
       ax.text(xmin, ymin, text, fontsize=15,
 
-      bbox=dict(facecolor='yellow', alpha=0.5))  
-      plt.axis('off')  
+      bbox=dict(facecolor='yellow', alpha=0.5))
+      plt.axis('off')
       plt.show()
 
 import torch
@@ -144,14 +150,15 @@ keep = probas.max(-1).values > 0.9
 
 \# rescale bounding boxes
 
-target\_sizes = torch.tensor(im.size\[::-1\]).unsqueeze(0)
+target_sizes = torch.tensor(im.size\[::-1\]).unsqueeze(0)
 
-postprocessed\_outputs = feature\_extractor.post\_process(outputs, target\_sizes)
+postprocessed_outputs = feature_extractor.post_process(outputs, target_sizes)
 
-bboxes\_scaled = postprocessed\_outputs\[0\]\['boxes'\]\[keep\]
+bboxes_scaled = postprocessed_outputs\[0\]\['boxes'\]\[keep\]
 
 \# Show the detection results  
-plot\_results(im, probas\[keep\], bboxes\_scaled)
+plot_results(im, probas\[keep\], bboxes_scaled)
+```
 
 ![](https://cdn-images-1.medium.com/max/800/0*4vUBdKuSJoWvQgqB)
 
@@ -163,8 +170,3 @@ These examples are just the tip of the iceberg of this research movement. The hi
 
 > Will this be the future of all AI models? Is the Transformer the best solution for all tasks, or will it be resigned to its NLP applications? One thing is for sure: For the time being, the Transformer is here to stay!
 
-By [Manuel Souto Juan](https://medium.com/@manuel-souto) on [January 10, 2022](https://medium.com/p/afbc5b46fbc8).
-
-[Canonical link](https://medium.com/@manuel-souto/transformers-multi-purpose-ai-models-in-disguise-afbc5b46fbc8)
-
-Exported from [Medium](https://medium.com) on September 25, 2023.

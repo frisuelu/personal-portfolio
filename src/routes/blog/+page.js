@@ -1,3 +1,9 @@
-// since there's no dynamic data here, we can prerender
-// it so that it gets served as a static asset in production
-export const prerender = true;
+// Prefetch the available posts using the API endpoint
+export const load = async ({ fetch }) => {
+	const response = await fetch(`/api/blogpost`);
+	const posts = await response.json();
+
+	return {
+		posts
+	};
+};

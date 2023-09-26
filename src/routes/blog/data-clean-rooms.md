@@ -1,42 +1,41 @@
 ---
-title: Data Clean Rooms: the key to marketing success
-date: 2023-01-24
+title: Data Clean Rooms - the key to marketing success
+date: "2023-01-24"
 ---
 
-Data Clean Rooms: the key to marketing success
-==============================================
+# Data Clean Rooms: the key to marketing success
 
 Unlock the full potential of your data and remain compliant for a data-driven marketing strategy
 
-* * *
+---
 
 ### Data Clean Rooms: the key to marketing success
 
 > **_Unlock the full potential of your data and remain compliant for a data-driven marketing strategy_**
 
-* * *
+---
 
 In this new article we bring back the subject of **Data Clean Rooms** (DCR), which are becoming more and more of a topical challenge due to the regulatory changes regarding data that are coming in Europe and, eventually, throughout the world. In case you missed it, I encourage you to give our original article a quick read here.
 
 [**Data Clean Rooms**  
-_An effective data-driven solution for modern advertising_medium.com](https://medium.com/bedrockdbd/data-clean-rooms-bb52ef66f852 "https://medium.com/bedrockdbd/data-clean-rooms-bb52ef66f852")[](https://medium.com/bedrockdbd/data-clean-rooms-bb52ef66f852)
+\_An effective data-driven solution for modern advertising_medium.com](https://medium.com/bedrockdbd/data-clean-rooms-bb52ef66f852 "https://medium.com/bedrockdbd/data-clean-rooms-bb52ef66f852")[](https://medium.com/bedrockdbd/data-clean-rooms-bb52ef66f852)
 
 Data Clean Rooms are being adopted across all facets of data-driven marketing for many use cases, such as:
 
-*   **Direct partnerships** between media buyers and sellers to improve ROI and yield, respectively
-*   Providing a **framework** for media owners to scale and control their **1st party data**
-*   Creating one **transparent environment** to resolve identities in a unified manner
-*   Acting as a **2nd party Data Hub** to further enrich audience and identity profiles
+- **Direct partnerships** between media buyers and sellers to improve ROI and yield, respectively
+- Providing a **framework** for media owners to scale and control their **1st party data**
+- Creating one **transparent environment** to resolve identities in a unified manner
+- Acting as a **2nd party Data Hub** to further enrich audience and identity profiles
 
 The value of Data Clean Rooms goes further than the technical advantages, since from its implementation it quickly becomes a critical company asset. It showcases a future-proof data strategy aligned with the companies’ interests, ensuring both data quality and robustness in the analysis and decisions taken.
 
 In this article, we will delve into the inner workings of a DCR and what to keep in mind when setting one up. Specifically, we will cover the following sections:
 
-*   **How does a DCR actually work?**
-*   **What technical characteristics does it have to ensure data privacy?**
-*   **What are some common use cases?**
+- **How does a DCR actually work?**
+- **What technical characteristics does it have to ensure data privacy?**
+- **What are some common use cases?**
 
-* * *
+---
 
 #### **How does a Data Clean Room work?**
 
@@ -70,7 +69,7 @@ Audience activation can be done directly from the DCR when connected through API
 
 All in all, the main DCR providers offer a technological stack rooted on a decentralised and agnostic infrastructure, allowing the greatest degree of freedom suited to any need while maintaining full data ownership and control.
 
-* * *
+---
 
 #### **How is data handled?**
 
@@ -92,7 +91,7 @@ Thus, data owners can share the encrypted data and perform analyses on top of th
 
 Figure 4. Example of audience matching and activation for a brand inside the DCR. Note that your hashed IDs are matched and activated by the partner **without any PII being shared**
 
-* * *
+---
 
 #### **Relevant DCR use cases**
 
@@ -130,7 +129,7 @@ This is a relevant use case for **media owners and networks**, as the prospect o
 
 Figure 7. Monetise your owned datasets in a safe manner, while allowing brands to enrich their own understanding of their consumers
 
-* * *
+---
 
 #### **Conclusion**
 
@@ -139,7 +138,7 @@ Data Clean Rooms are an incipient solution that is growing in demand and that ma
 We are one of the leading providers in DCR solutions in Southern Europe as we work with all the major DCR technologies that exist in the market today. If you feel like this solution may be the best fit for you, [contact us](https://www.bedrockdbd.com/contact/) anytime and we will be happy to discuss it in detail with you!
 
 [**Bedrock Contact - Start a project**  
-_We can help you take your first steps or assist you in launching your next transformative initiative._www.bedrockdbd.com](https://www.bedrockdbd.com/contact "https://www.bedrockdbd.com/contact")[](https://www.bedrockdbd.com/contact)
+\_We can help you take your first steps or assist you in launching your next transformative initiative.\_www.bedrockdbd.com](https://www.bedrockdbd.com/contact "https://www.bedrockdbd.com/contact")[](https://www.bedrockdbd.com/contact)
 
 By [Manuel Souto Juan](https://medium.com/@manuel-souto) on [January 24, 2023](https://medium.com/p/8e05cd709a3d).
 

@@ -1,14 +1,13 @@
 ---
 title: Consumer-centric marketing in a cookie-less world
-date: 2022-11-28
+date: "2022-11-28"
 ---
 
-Consumer-centric marketing in a cookie-less world
-=================================================
+# Consumer-centric marketing in a cookie-less world
 
 Build a future-proof marketing strategy by leveraging Data Science and Machine Learning capabilities
 
-* * *
+---
 
 ### Consumer-centric marketing in a cookie-less world
 
@@ -28,14 +27,14 @@ We encourage brands to not lose sight of what’s important, take a step back, a
 
 Backed by Data Science capabilities, this approach can greatly improve consumers’ interactions with the brand across all stages of their customer journey. From our perspective, some important points that brands should bear in mind are:
 
-*   **Focus on building better first-party data**
-*   **Unlock the power of “hyper-local” actions**
-*   **Understand the most receptive context**
-*   **Create real-time lead-scoring models**
-*   **Don’t buy into one-size-fits-all solutions**
-*   **Integrate your short-term solutions with a long-term business plan**
+- **Focus on building better first-party data**
+- **Unlock the power of “hyper-local” actions**
+- **Understand the most receptive context**
+- **Create real-time lead-scoring models**
+- **Don’t buy into one-size-fits-all solutions**
+- **Integrate your short-term solutions with a long-term business plan**
 
-* * *
+---
 
 #### Focus on building better first-party data
 
@@ -47,7 +46,7 @@ Otherwise, Data Science and Artificial Intelligence solutions run the risk of be
 
 Once the first-party data is correctly designed, advertisers should then turn towards how to leverage this data to, for instance, activate “lookalikes” when cookies are gone. Multiple alternatives are present today, but one such solution is **Data Clean Rooms**: a secure and private solution to store and analyse relevant anonymous user information, and further enrich it with additional data sources.
 
-* * *
+---
 
 #### Unlock the power of “hyper-local” actions
 
@@ -55,7 +54,7 @@ Most current solutions in the market are reliant on IDs or identifiers for users
 
 Although direct geolocation data is strictly regulated by GDPR, the use of complementary data at a high granular level can help improve the first party data stack and obtain valuable insights to drive the marketing strategy. One such example is **Google Search** data, which can be analysed using Data Science algorithms such as _clustering_ or _regression_ models to identify regional trends, build keyword universes to understand competitor actions, and make targeted campaigns down to the city level.
 
-* * *
+---
 
 #### Understand the most receptive context
 
@@ -65,7 +64,7 @@ It uses Artificial Intelligence (AI) models to identify and index the content of
 
 In short, the usefulness of context can help drive a message to users when they are most receptive, and can help increase the efficiency of specific steps in a marketing campaign.
 
-* * *
+---
 
 #### Create real-time lead-scoring models
 
@@ -75,7 +74,7 @@ User intent can help multiple areas inside an organisation, from helping with _A
 
 One application of intent in marketing is the **real-time intent modelling** of website visitors, assigning an intent score towards their possible conversion. Since most of the web traffic received on a webpage is anonymous, this solution can help drive more conversions on previously unknown users. This solution uses web analytics data, the user’s real-time web interaction, and other relevant data sources to build an AI model capable of qualifying each new user at each point of their website experience.
 
-* * *
+---
 
 #### Don’t buy into one-size-fits-all solutions
 
@@ -85,15 +84,15 @@ A simple example just to illustrate this could be an **AI-powered attribution mo
 
 Whenever possible, it should be ensured that data solutions implemented in a company are tailored specifically to suit the brand’s needs, in order to avoid headaches in the future.
 
-* * *
+---
 
 #### Integrate your short-term solutions with a long-term business plan
 
 Data projects are often seen as tactical approaches to solve one impending need or digitalise a specific process. However, these “one-off” solutions often cause more problems than they solve, since:
 
-*   They might not be aligned with the company strategy
-*   They can be disconnected from other one-off projects or internal processes
-*   They usually lack context on the root of the challenge, focusing on a consequence and not answering the important questions
+- They might not be aligned with the company strategy
+- They can be disconnected from other one-off projects or internal processes
+- They usually lack context on the root of the challenge, focusing on a consequence and not answering the important questions
 
 Data is just one more asset that can help brands stay ahead of the market, and therefore must be aligned with the company strategy and processes. Defining a long-term roadmap of actions and subdividing it into specific projects and tasks keeps all solutions aligned with the brand objectives and strategy.
 

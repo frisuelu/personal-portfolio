@@ -1,14 +1,13 @@
 ---
 title: Quantum Physics II — Data collection, modelling, and analysis at CMS CERN
-date: 2021-04-27
+date: "2021-04-27"
 ---
 
-Quantum Physics II — Data collection, modelling, and analysis at CMS CERN
-=========================================================================
+# Quantum Physics II — Data collection, modelling, and analysis at CMS CERN
 
 CMS ALGORITHMS FOR ANALYTICS AND DARK MATTER DETECTION
 
-* * *
+---
 
 ### Quantum Physics II — Data collection, modelling, and analysis at CMS CERN
 
@@ -21,9 +20,9 @@ Bedrock — Data by Design
 In this second part of the previous introductory article, we’ll tackle the more in-depth description of data collection, object modelling, and data analysis at CMS. The general workflow behind these kinds of experiments is complex, but I’ll try to give a brief description of each part so you can get a general idea of the whole process.
 
 [**Quantum Physics**  
-_HOW DATA ANALYSIS AT CERN CAN HELP DETECT DARK MATTER_manuel-souto.medium.com](https://manuel-souto.medium.com/quantum-physics-31b66eaa1072 "https://manuel-souto.medium.com/quantum-physics-31b66eaa1072")[](https://manuel-souto.medium.com/quantum-physics-31b66eaa1072)
+\_HOW DATA ANALYSIS AT CERN CAN HELP DETECT DARK MATTER_manuel-souto.medium.com](https://manuel-souto.medium.com/quantum-physics-31b66eaa1072 "https://manuel-souto.medium.com/quantum-physics-31b66eaa1072")[](https://manuel-souto.medium.com/quantum-physics-31b66eaa1072)
 
-* * *
+---
 
 #### **Analysis of a collision and important concepts**
 
@@ -51,7 +50,7 @@ CMS Level-1 trigger overview.
 
 Schematic view of the CMS Data Acquisition System.
 
-* * *
+---
 
 #### **Collision object identification**
 
@@ -61,7 +60,7 @@ With this algorithm, photons and leptons (especially muons) are easily tagged wi
 
 In a collision between two protons, or more accurately between proton quarks, the immediate thought is that only the constituent quarks can interact, so only _up_ and _down_ quarks would interact. However, a measure of the mass of the proton and these quarks shows that most of the mass doesn’t come from its constituents but from _internal bounding energy_. This means that this excess energy, if the collider energy is enough, can produce other quarks such as quarks _bottom_ and _top_, both several times the mass of quarks _u_ and _d_, and these quarks may be the ones that interact at the collision point; an example of a collision may be seen in the image below.
 
-* * *
+---
 
 [![](https://cdn-images-1.medium.com/max/800/0*H7ZzApqxug79G4Jr)](https://atlas.physicsmasterclasses.org/zpath_files/img/proton-proton_en.jpg)
 
@@ -69,7 +68,7 @@ Schematic interaction of two colliding protons and their partons.
 
 An important concept of jet tagging is that, usually, the decay-inducing quark is unknown since the hadronisation process is so chaotic, but a certain type of jet can be identified. Jets coming from the decay of a _b_ quark have a characteristic _second vertex_, which has enough travel distance from the first as to be measured (the reason is that _b_ quarks have a longer lifetime than other quarks); for this reason, it’s perceived as a separate important event and receives the name **b-tagging**. This event has a specific algorithm created to detect it called [**CVS**](https://arxiv.org/pdf/1712.07158.pdf).
 
-* * *
+---
 
 #### **Data simulation and model checking**
 
@@ -85,17 +84,17 @@ Finally, the goal of these discovery projects can be summarised in one sentence:
 
 Afterwards, the investigator includes the real data and checks if the results are in agreement with the SM. The way this is done is by a hypothesis test of:
 
-*   **_H0: SM physics_**
-*   **_H1: BSM physics_**
+- **_H0: SM physics_**
+- **_H1: BSM physics_**
 
 This includes doing some advanced statistical analysis, like creating a modified _likelihood ratio_ to obtain confidence intervals (CI) of the cross-sections of these processes. This is very technical so I’ll leave some documentation [here](https://indico.cern.ch/event/727396/contributions/3021899/attachments/1657532/2654085/Statistical_methods_at_ATLAS_and_CMS_2.pdf) that hints at the entire process, but the basic idea behind it is that we can compare the obtained results with what is expected and:
 
-*   If they’re similar, then the investigator has fine-tuned the limits of the cross-section of the model for future references, and further studies of that model are made easier.
-*   If they aren’t similar, then they might have discovered something new! In particle physics, this case is presented when differences between theoretical and experimental cross-sections exceed 2𝝈 uncertainty, but it’s not classified as a discovery until the 5𝝈 threshold; 𝝈 in this context refers to the confidence interval associated, and this [article](https://blogs.scientificamerican.com/observations/five-sigmawhats-that/) gives a really good explanation of this concept. This shows that, in particle physics, we are really certain of the results obtained.
+- If they’re similar, then the investigator has fine-tuned the limits of the cross-section of the model for future references, and further studies of that model are made easier.
+- If they aren’t similar, then they might have discovered something new! In particle physics, this case is presented when differences between theoretical and experimental cross-sections exceed 2𝝈 uncertainty, but it’s not classified as a discovery until the 5𝝈 threshold; 𝝈 in this context refers to the confidence interval associated, and this [article](https://blogs.scientificamerican.com/observations/five-sigmawhats-that/) gives a really good explanation of this concept. This shows that, in particle physics, we are really certain of the results obtained.
 
 As an example, the most recent case of this 5𝝈 threshold was the [discovery](https://arxiv.org/abs/1207.7214) of the Higgs boson back in 2012.
 
-* * *
+---
 
 ### **Conclusion**
 
