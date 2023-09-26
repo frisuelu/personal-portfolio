@@ -1,5 +1,6 @@
 ---
 title: Consumer-centric marketing in a cookie-less world
+date: 2022-11-28
 ---
 
 Consumer-centric marketing in a cookie-less world

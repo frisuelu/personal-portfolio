@@ -1,5 +1,6 @@
 ---
 title: TRANSFORMERS: multi-purpose AI models in disguise
+date: 2022-01-10
 ---
 
 TRANSFORMERS: multi-purpose AI models in disguise

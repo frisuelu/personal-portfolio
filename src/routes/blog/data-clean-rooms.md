@@ -1,5 +1,6 @@
 ---
 title: Data Clean Rooms: the key to marketing success
+date: 2023-01-24
 ---
 
 Data Clean Rooms: the key to marketing success

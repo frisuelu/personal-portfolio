@@ -1,5 +1,6 @@
 ---
 title: Quantum Physics I — the CERN data workflow in new Physics discoveries
+date: 2021-04-27
 ---
 
 Quantum Physics I — the CERN data workflow in new Physics discoveries.

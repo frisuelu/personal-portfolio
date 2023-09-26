@@ -1,5 +1,6 @@
 ---
 title: Quantum Physics II — Data collection, modelling, and analysis at CMS CERN
+date: 2021-04-27
 ---
 
 Quantum Physics II — Data collection, modelling, and analysis at CMS CERN
