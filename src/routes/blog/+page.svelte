@@ -10,23 +10,23 @@
   <div class="container">
     <div class="flex flex-wrap justify-center -mx-4">
       <div class="w-full px-4">
-        <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
-          <span class="font-semibold text-lg text-primary mb-2 block">
+        <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[760px]">
+          <span class="font-semibold text-xl text-primary mb-2 block">
             Medium Blog Posts
           </span>
           <h2
             class="
                   font-bold
-                  text-3xl
-                  sm:text-4xl
-                  md:text-[40px]
+                  text-4xl
+                  sm:text-5xl
+                  md:text-[50px]
                   text-dark
-                  mb-4
+                  mb-8
                   "
           >
-            <b>Sharing is caring!</b>
+            Sharing is caring!
           </h2>
-          <p class="text-base text-body-color">
+          <p class="text-lg sm:text-xl md:text-xl text-body-color">
             During my career I have learned and experienced many things, so I
             have taken the time to condense some of the most relevant knowledge
             I have gained. These are all Medium embeddings of the actual posts

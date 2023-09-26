@@ -11,8 +11,8 @@
   <div class="container">
     <div class="flex flex-wrap justify-center -mx-4">
       <div class="w-full px-4">
-        <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
-          <span class="font-semibold text-lg text-primary mb-2 block">
+        <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[760px]">
+          <span class="font-semibold text-xl text-primary mb-2 block">
             Code repositories and descriptions
           </span>
           <h2
@@ -20,14 +20,14 @@
                   font-bold
                   text-3xl
                   sm:text-4xl
-                  md:text-[40px]
+                  md:text-[50px]
                   text-dark
                   mb-4
                   "
           >
-            <b>Data Science projects I have worked on</b>
+            Data Science projects I have worked on
           </h2>
-          <p class="text-base text-body-color">
+          <p class="text-lg sm:text-xl md:text-xl text-body-color">
             In the following cards you can see some of the DS projects I have
             worked on. I am a curious person by nature, always trying to learn
             and attracted to new things. I believe learning is a never-ending

@@ -1,20 +1,16 @@
 ---
 title: TRANSFORMERS - multi-purpose AI models in disguise (Part I)
 subtitle: First part of the post series delving into the <b>Transformer</b> architecture and its applications outside of NLP.
-date: "2022-01-10"
+date: "2022-01-09"
 thumbnail_url: "https://miro.medium.com/v2/format:webp/1*wZOvEaKZ5CUCgyFlvYfh3w.jpeg"
 thumbnail_alt: Transformers outside NLP
 ---
 
 # TRANSFORMERS - multi-purpose AI models in disguise
 
-Novel applications of this powerful architecture set the bar for future AI advances.
+> **_Novel applications of this powerful architecture set the bar for future AI advances_**
 
 ---
-
-### **TRANSFORMERS: multi-purpose AI models in disguise**
-
-#### Novel applications of this powerful architecture set the bar for future AI advances.
 
 ![](https://cdn-images-1.medium.com/max/1200/1*wZOvEaKZ5CUCgyFlvYfh3w.jpeg)
 
@@ -26,10 +22,7 @@ Moreover, it has also been concluded that the architecture of Transformers is hi
 
 So, a brief introduction to the Transformer, its beginnings, and the most common uses will be presented next. In the second part of this article, we will delve deeper into the new advances being made by the research community, presenting some exciting new use cases and code examples along the way. So strap in and prepare for the ride!
 
-It should be noted that AI solutions sometimes lack the responsibility and rigour required when practising _Data Science_. The undesired effect is that models can retain the inherent bias of the data sets used to train them, and this can lead to fiascos such as [Google’s Photos app](https://www.bbc.com/news/technology-33347866). I recommend you check out the article written by my colleague [Jesus Templado](https://medium.com/u/10e1f45c4bb2) on responsible AI and some hands-on criteria to follow when ideating, training or fine-tuning these models.
-
-[**The opportunity to apply responsible AI (Part I): Why is transparent AI a hot topic these days?**  
-\_By Jesús Templado, Director at Bedrock_medium.com](https://medium.com/bedrockdbd/part-i-why-is-responsible-ai-a-hot-topic-these-days-da037dbee705 "https://medium.com/bedrockdbd/part-i-why-is-responsible-ai-a-hot-topic-these-days-da037dbee705")[](https://medium.com/bedrockdbd/part-i-why-is-responsible-ai-a-hot-topic-these-days-da037dbee705)
+It should be noted that AI solutions sometimes lack the responsibility and rigour required when practising _Data Science_. The undesired effect is that models can retain the inherent bias of the data sets used to train them, and this can lead to fiascos such as [Google’s Photos app](https://www.bbc.com/news/technology-33347866).
 
 ### TRANSFORMER: APPEARANCE & RESEARCH
 
@@ -39,21 +32,15 @@ In December 2017, the Transformer model architecture was proposed by Google Brai
 
 One question may come to your mind: How does a Transformer work? How and why is it better? Although we will avoid highly technical explanations, a basic grasp of the fundamentals for each model is needed to understand its many advantages.
 
-[![](https://cdn-images-1.medium.com/max/800/0*ybBwvf6QLBBQBHNE)](https://www.w3schools.com/ai/ai_neural_networks.asp)
-
-Figure 1: schema of a neural network.
+[![Figure 1: schema of a neural network.](https://cdn-images-1.medium.com/max/800/0*ybBwvf6QLBBQBHNE)](https://www.w3schools.com/ai/ai_neural_networks.asp)
 
 Neural networks are connections of nodes that represent relationships between data. They consist of input nodes where data is introduced, intermediate layers where it is processed, and output nodes where the results are obtained. Each of these nodes performs an operation on the data (specifically a _regression_) that affects the final result.
 
-[![](https://cdn-images-1.medium.com/max/800/0*VTQMRILKk_FbJt83)](https://www.researchgate.net/figure/The-comparison-between-Recurrent-Neural-Network-RNN-and-Feed-Forward-Neural-Network_fig1_338672883)
-
-Figure 2: Graphical comparison between a neural network and a RNN. The _loop_ provides the time dimension to the model.
+[![Figure 2: Graphical comparison between a neural network and a RNN. The _loop_ provides the time dimension to the model.](https://cdn-images-1.medium.com/max/800/0*VTQMRILKk_FbJt83)](https://www.researchgate.net/figure/The-comparison-between-Recurrent-Neural-Network-RNN-and-Feed-Forward-Neural-Network_fig1_338672883)
 
 _Recurrent neural networks_ or RNN also take into account the time dimension of the data, where the outcome is influenced by the previous value. This allows the previous state of the data to be kept and sent into the next value. A variation of the RNN named LSTM or _long short-term memory_ also takes into account multiple points, so the result avoids _short-term memory issues_ with the model that the RNN usually presents.
 
-[![](https://cdn-images-1.medium.com/max/800/0*kz3juzVJCTezz-YP)](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53)
-
-Figure 3: schematic view of a CNN. Feature learning involves the training process, while classification is the model output.
+[![Figure 3: schematic view of a CNN. Feature learning involves the training process, while classification is the model output.](https://cdn-images-1.medium.com/max/800/0*kz3juzVJCTezz-YP)](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53)
 
 _Convolutional neural networks_ or CNN apply a mathematical transformation called _convolution_ to the data over a sliding window; this essentially looks at small sections of the data to understand its overall structure, finding patterns or features. The architecture is especially useful for Computer Vision applications, where objects are detected after looking at pieces of each picture.
 
@@ -71,6 +58,7 @@ Another great thing about the Transformer research community is the willingness 
 
 Using these models is also very easy with the help of their library, in just a few lines of code we can use pre-trained models for different tasks. One of those is the use of over 1000 translation models developed by the University of Helsinki:
 
+```python
 \# Import the libraries  
 from transformers import MarianMTModel, MarianTokenizer  
 import torch
@@ -85,18 +73,8 @@ input = tokenizer("Transformers are a really cool tool for multiple NLP tasks, b
 
 \# Print the results  
 print(tokenizer.batch_decode(model.generate(\*\*input), skip_special_tokens=True)\[0\])
+```
 
 The output is the sentence: **Los transformadores son una herramienta realmente genial para múltiples tareas NLP, pero pueden hacer mucho más!!**
 
-Our team at [Bedrock](https://www.bedrockdbd.com/) has been able to leverage these models to deliver powerful business solutions to _People Analytics_ companies, further reinforcing their utility in the professional environment!
-
 Stay tuned for the next part of this article, where we will present cutting-edge uses of the Transformer in other areas of application of AI, where previously other models reigned supreme.
-
-[**TRANSFORMERS: multi-purpose AI models in disguise**  
-\_Novel applications of this powerful architecture set the bar for future AI advances.\_manuel-souto.medium.com](https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-afbc5b46fbc8 "https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-afbc5b46fbc8")[](https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-afbc5b46fbc8)
-
-By [Manuel Souto Juan](https://medium.com/@manuel-souto) on [January 10, 2022](https://medium.com/p/978c48fdd973).
-
-[Canonical link](https://medium.com/@manuel-souto/transformers-multi-purpose-ai-models-in-disguise-978c48fdd973)
-
-Exported from [Medium](https://medium.com) on September 25, 2023.

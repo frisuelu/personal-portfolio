@@ -2,26 +2,19 @@
 title: Data Clean Rooms - the key to marketing success
 subtitle: Data-driven marketing strategies employing new cookie-less approaches
 date: "2023-01-24"
-thumbnail_url: "https://miro.medium.com/v2/0*2c6gsVOpcV5fWMWN"
+thumbnail_url: "https://cdn.chimpify.net/5f896ecda8587281208b456f/2021/11/mmt-SoM-cookieLife4-dataCleanRooms-blog.jpg"
 thumbnail_alt: Data Clean Rooms
 ---
 
 # Data Clean Rooms - the key to marketing success
 
-Unlock the full potential of your data and remain compliant for a data-driven marketing strategy
-
----
-
-### Data Clean Rooms: the key to marketing success
-
 > **_Unlock the full potential of your data and remain compliant for a data-driven marketing strategy_**
 
 ---
 
-In this new article we bring back the subject of **Data Clean Rooms** (DCR), which are becoming more and more of a topical challenge due to the regulatory changes regarding data that are coming in Europe and, eventually, throughout the world. In case you missed it, I encourage you to give our original article a quick read here.
+![](https://cdn.chimpify.net/5f896ecda8587281208b456f/2021/11/mmt-SoM-cookieLife4-dataCleanRooms-blog.jpg)
 
-[**Data Clean Rooms**  
-\_An effective data-driven solution for modern advertising_medium.com](https://medium.com/bedrockdbd/data-clean-rooms-bb52ef66f852 "https://medium.com/bedrockdbd/data-clean-rooms-bb52ef66f852")[](https://medium.com/bedrockdbd/data-clean-rooms-bb52ef66f852)
+In this new article we bring back the subject of **Data Clean Rooms** (DCR), which are becoming more and more of a topical challenge due to the regulatory changes regarding data that are coming in Europe and, eventually, throughout the world.
 
 Data Clean Rooms are being adopted across all facets of data-driven marketing for many use cases, such as:
 
@@ -48,7 +41,7 @@ If you recall from our previous article, there are three main types of DCRs, mai
 
 The first step is to decide the relevant 1st party data you want to add to the DCR, such as ecommerce transactions, CRM or CDP records. It’s important to note at this stage that PI and PII data **is read, encrypted and copied** to a client-specific DCR Cloud Storage; no movement of sensitive data is done, and inside the DCR only a “hashed” copy of the data is present. Data ownership remains on the client side, and no leak or exposure of data is risked while on the DCR platform.
 
-![](https://cdn-images-1.medium.com/max/800/0*2c6gsVOpcV5fWMWN)
+![Figure 1. Infrastructure screenshot as one client, part of a multiple-partner collaboration](https://cdn-images-1.medium.com/max/800/0*2c6gsVOpcV5fWMWN)
 
 Figure 1. Infrastructure screenshot as one client, part of a multiple-partner collaboration
 
@@ -64,7 +57,7 @@ In order to avoid fingerprinting and to keep the data anonymous, further mathema
 
 In collaboration scenarios, approved partners and advertisers are granted access to the anonymised data by the data owner on the client side, using mathematical models that contain no PII and are shared between the client’s DCR instances. The protected data can be used by partners and advertisers for data analytics, audience intelligence or data enrichment with identity providers, among others. More details on the actual data sharing are given in the section below.
 
-![](https://cdn-images-1.medium.com/max/800/0*T5klsNvV8HR66zCA)
+![Figure 2. Data can also be matched on multiple IDs at once to eliminate the reliance on one type of identity resolution or partner](https://cdn-images-1.medium.com/max/800/0*T5klsNvV8HR66zCA)
 
 Figure 2. Data can also be matched on multiple IDs at once to eliminate the reliance on one type of identity resolution or partner
 
@@ -84,13 +77,13 @@ However, encrypted data is a two-way process, where a private key is generated f
 
 Data Clean Rooms go one step further and apply advanced mathematical models such as **homomorphic encryption** to ensure data is secure, but also allow the analysis of encrypted data without the need for the private key! Further detail on this model can be seen [here](https://www.statcan.gc.ca/en/data-science/network/homomorphic-encryption), but in short, it allows **operations on the encrypted data** that can be **directly translated to the unencrypted data**.
 
-![](https://cdn-images-1.medium.com/max/800/0*ugNdiaJEsjdbq8Ko)
+![Figure 3. Ordinary encryption process (left) versus homomorphic process (right)](https://cdn-images-1.medium.com/max/800/0*ugNdiaJEsjdbq8Ko)
 
 Figure 3. Ordinary encryption process (left) versus homomorphic process (right)
 
 Thus, data owners can share the encrypted data and perform analyses on top of them without the need to decrypt it. This is the fundamental piece of privacy that enables DCRs to comply with all privacy regulations and allow DCR users to stay ahead of the market.
 
-![](https://cdn-images-1.medium.com/max/800/0*3cgJys9muk8qvq0F)
+![Figure 4. Example of audience matching and activation for a brand inside the DCR. Note that your hashed IDs are matched and activated by the partner **without any PII being shared**](https://cdn-images-1.medium.com/max/800/0*3cgJys9muk8qvq0F)
 
 Figure 4. Example of audience matching and activation for a brand inside the DCR. Note that your hashed IDs are matched and activated by the partner **without any PII being shared**
 
@@ -108,7 +101,7 @@ These silos can be the **internal departments** of a company, different companie
 
 Recall that **the actual data is not moved** between the instances and only the encrypted data is matched and analysed; in the end, these entities act as if they were different clients, so they can keep the ownership of their data while, in the meantime, allow cross collaboration.
 
-![](https://cdn-images-1.medium.com/max/800/0*Vk4OA951j4yt0A2K)
+![Figure 5. Different teams or departments can collaborate securely to allow a single customer view across their organisation](https://cdn-images-1.medium.com/max/800/0*Vk4OA951j4yt0A2K)
 
 Figure 5. Different teams or departments can collaborate securely to allow a single customer view across their organisation
 
@@ -120,7 +113,7 @@ This benefits all parties involved, as usually this information is both very per
 
 One specific example could be a **retail** brand selling clothes that crossed their data with a **fashion** magazine. In this case, the added benefit for the brand is clear: they can understand if that channel is a relevant media source for their own consumer, and thus a way to improve their brand awareness and notoriety. For the magazine, the advantage is knowing more about their own readers through their fashion interests, providing further collaboration opportunities with other brands.
 
-![](https://cdn-images-1.medium.com/max/800/0*e8IGcXbPVyZ5iHK0)
+![Figure 6. Crossing 1st party data while remaining in such an environment allows brands to understand other interests of their consumers](https://cdn-images-1.medium.com/max/800/0*e8IGcXbPVyZ5iHK0)
 
 Figure 6. Crossing 1st party data while remaining in such an environment allows brands to understand other interests of their consumers
 
@@ -128,7 +121,7 @@ Figure 6. Crossing 1st party data while remaining in such an environment allows 
 
 This is a relevant use case for **media owners and networks**, as the prospect of a **secure** environment and **standardised** procedures to share their 1st party data is critical to go one step further in their business model. In this use case, brands and interested parties would come to understand their consumers’ media interests and behaviour. The direct impact of this for brands is that media planning can then determine the **expected reach** of each channel with more certainty than using the common aggregated data sources currently used.
 
-![](https://cdn-images-1.medium.com/max/800/0*g8X7tqmtZ0VXcaca)
+![Figure 7. Monetise your owned datasets in a safe manner, while allowing brands to enrich their own understanding of their consumers](https://cdn-images-1.medium.com/max/800/0*g8X7tqmtZ0VXcaca)
 
 Figure 7. Monetise your owned datasets in a safe manner, while allowing brands to enrich their own understanding of their consumers
 
@@ -137,14 +130,3 @@ Figure 7. Monetise your owned datasets in a safe manner, while allowing brands t
 #### **Conclusion**
 
 Data Clean Rooms are an incipient solution that is growing in demand and that many companies are currently garnering to their advantage. We hope this article has given you a new perspective into how a Data Clean Room could suit your organisation’s needs.
-
-We are one of the leading providers in DCR solutions in Southern Europe as we work with all the major DCR technologies that exist in the market today. If you feel like this solution may be the best fit for you, [contact us](https://www.bedrockdbd.com/contact/) anytime and we will be happy to discuss it in detail with you!
-
-[**Bedrock Contact - Start a project**  
-\_We can help you take your first steps or assist you in launching your next transformative initiative.\_www.bedrockdbd.com](https://www.bedrockdbd.com/contact "https://www.bedrockdbd.com/contact")[](https://www.bedrockdbd.com/contact)
-
-By [Manuel Souto Juan](https://medium.com/@manuel-souto) on [January 24, 2023](https://medium.com/p/8e05cd709a3d).
-
-[Canonical link](https://medium.com/@manuel-souto/data-privacy-and-marketing-how-data-clean-rooms-can-help-8e05cd709a3d)
-
-Exported from [Medium](https://medium.com) on September 25, 2023.

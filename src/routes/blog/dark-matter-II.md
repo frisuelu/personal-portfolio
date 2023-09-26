@@ -8,26 +8,17 @@ thumbnail_alt: Dark Matter at CERN
 
 # Quantum Physics II — Data collection, modelling, and analysis at CMS CERN
 
-CMS ALGORITHMS FOR ANALYTICS AND DARK MATTER DETECTION
+> **_HOW DATA ANALYSIS AT CERN CAN HELP DETECT DARK MATTER_**
 
 ---
-
-### Quantum Physics II — Data collection, modelling, and analysis at CMS CERN
 
 ![](https://cdn-images-1.medium.com/max/2560/1*M46lihvbDfpJl6ZGY6tgXg.jpeg)
 
-Bedrock — Data by Design
-
-### CMS ALGORITHMS FOR ANALYTICS AND DARK MATTER DETECTION
-
 In this second part of the previous introductory article, we’ll tackle the more in-depth description of data collection, object modelling, and data analysis at CMS. The general workflow behind these kinds of experiments is complex, but I’ll try to give a brief description of each part so you can get a general idea of the whole process.
-
-[**Quantum Physics**  
-\_HOW DATA ANALYSIS AT CERN CAN HELP DETECT DARK MATTER_manuel-souto.medium.com](https://manuel-souto.medium.com/quantum-physics-31b66eaa1072 "https://manuel-souto.medium.com/quantum-physics-31b66eaa1072")[](https://manuel-souto.medium.com/quantum-physics-31b66eaa1072)
 
 ---
 
-#### **Analysis of a collision and important concepts**
+## Analysis of a collision and important concepts
 
 We‘ve been talking about particles and detectors, but an important question remains unanswered: what exactly **is** colliding? The answer is _protons_, or more exactly, _bunches_ of protons. Accelerated through the LHC by multiple solenoid setups, these bunches come across one another in the detectors, and a collision happens. This proton _beam_ has no perpendicular component, meaning it only moves in a circular manner through the LHC, due to the solenoids’ magnetic field; this is done on purpose since studying the collision in the **perpendicular plane** means the conservation of energy applies and all momentum must be null, meaning if there’s an imbalance an _invisible particle_ has been produced. A cross-section of the detector can be seen below, with its components ([here](https://www.researchgate.net/figure/Cross-sectional-view-of-the-CMS-detector-11-The-HCAL-contains-and-measures-the_fig3_41217449)). Some examples of these particles are neutrinos, but also possible dark matter or other theoretical particles. So now, what’s the next step?
 
@@ -53,9 +44,7 @@ CMS Level-1 trigger overview.
 
 Schematic view of the CMS Data Acquisition System.
 
----
-
-#### **Collision object identification**
+## Collision object identification
 
 Now that collision data has been recorded, the next step is to identify the particles based on their traces through the detector. This will allow scientists to _reconstruct_ the particles that have appeared as a result of the collision, using the data collected at the different parts of the detector. These reconstructions of particles at CMS employ an algorithm called [**Particle Flow**](https://arxiv.org/abs/1401.8155); the algorithm itself is really complex and takes into account many measurements and variables to discriminate between particles and correctly tag them, so please check the documentation provided if you’re interested.
 
@@ -63,17 +52,13 @@ With this algorithm, photons and leptons (especially muons) are easily tagged wi
 
 In a collision between two protons, or more accurately between proton quarks, the immediate thought is that only the constituent quarks can interact, so only _up_ and _down_ quarks would interact. However, a measure of the mass of the proton and these quarks shows that most of the mass doesn’t come from its constituents but from _internal bounding energy_. This means that this excess energy, if the collider energy is enough, can produce other quarks such as quarks _bottom_ and _top_, both several times the mass of quarks _u_ and _d_, and these quarks may be the ones that interact at the collision point; an example of a collision may be seen in the image below.
 
----
-
 [![](https://cdn-images-1.medium.com/max/800/0*H7ZzApqxug79G4Jr)](https://atlas.physicsmasterclasses.org/zpath_files/img/proton-proton_en.jpg)
 
 Schematic interaction of two colliding protons and their partons.
 
 An important concept of jet tagging is that, usually, the decay-inducing quark is unknown since the hadronisation process is so chaotic, but a certain type of jet can be identified. Jets coming from the decay of a _b_ quark have a characteristic _second vertex_, which has enough travel distance from the first as to be measured (the reason is that _b_ quarks have a longer lifetime than other quarks); for this reason, it’s perceived as a separate important event and receives the name **b-tagging**. This event has a specific algorithm created to detect it called [**CVS**](https://arxiv.org/pdf/1712.07158.pdf).
 
----
-
-#### **Data simulation and model checking**
+## Data simulation and model checking
 
 Once meaningful data has been retrieved and objects are recreated, it’s time to check this data against previously known results for the SM. The way CERN takes care of this comparison is by employing data simulations with _MonteCarlo_ _samples_. These simulations include all data related to processes’ cross-sections (defined as the probability of decay related to all possible decays), decays, and detector components (to the point of knowing the location of each pixel!) so that the uncertainty of these controllable events is minimised and meaningful conclusions can be made; if we want to measure a cross-section for dark matter, which may be very low, these uncertainties could be either the defining point of discovery or just statistical variations.
 
@@ -104,9 +89,3 @@ As an example, the most recent case of this 5𝝈 threshold was the [discovery](
 The goal of this article is to show the reader the workflow of a CMS investigator researching a certain process, either a search for new particles like dark matter or already studied processes. From the detector components to the data collection, simulation and analysis, I hope you have acquired a general understanding of these concepts, albeit very superficial. In that regard, the literature regarding this subject is written by CERN physicists, so assumptions about all these steps are regularly made, and the average reader will be lost in the concepts and common _slang_ employed.
 
 I hope this article has helped you get a better understanding of this workflow, and that it’ll maybe spark some interest in particle physics, helping you understand further research done and news stories about it.
-
-By [Manuel Souto Juan](https://medium.com/@manuel-souto) on [April 27, 2021](https://medium.com/p/c4fa1df9d1d0).
-
-[Canonical link](https://medium.com/@manuel-souto/quantum-physics-c4fa1df9d1d0)
-
-Exported from [Medium](https://medium.com) on September 25, 2023.

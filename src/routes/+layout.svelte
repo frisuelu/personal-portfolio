@@ -3,6 +3,10 @@
   import "./styles.css";
   import Header from "$lib/components/Header.svelte";
   import Footer from "$lib/components/Footer.svelte";
+
+  // for page transitions
+  import { fade } from "svelte/transition";
+  export let data;
 </script>
 
 <link
@@ -11,11 +15,13 @@
 />
 
 <div class="app">
- <Header/> 
-  <main>
-    <slot />
-  </main>
- <Footer/> 
+  {#key data.currentRoute}
+    <Header />
+    <main in:fade={{ duration: 500, delay: 150 }} out:fade={{ duration: 300 }}>
+      <slot />
+    </main>
+    <Footer />
+  {/key}
 </div>
 
 <style>
@@ -31,7 +37,7 @@
     flex-direction: column;
     padding: 1rem;
     width: 100%;
-    max-width: 64rem;
+    max-width: 84rem;
     margin: 0 auto;
     box-sizing: border-box;
   }

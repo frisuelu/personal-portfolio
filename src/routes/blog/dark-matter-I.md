@@ -1,26 +1,18 @@
 ---
 title: Quantum Physics I — the CERN data workflow in new Physics discoveries
 subtitle: First part of the post series detailing work processes at CERN in dark matter analysis.
-date: "2021-04-27"
+date: "2021-04-26"
 thumbnail_url: "https://miro.medium.com/v2/format:webp/1*M46lihvbDfpJl6ZGY6tgXg.jpeg"
 thumbnail_alt: Dark Matter at CERN
 ---
 
 # Quantum Physics I — the CERN data workflow in new Physics discoveries.
 
-HOW DATA ANALYSIS AT CERN CAN HELP DETECT DARK MATTER
+> **_HOW DATA ANALYSIS AT CERN CAN HELP DETECT DARK MATTER_**
 
 ---
-
-### Quantum Physics I — the CERN data workflow in new Physics discoveries.
 
 ![](https://cdn-images-1.medium.com/max/2560/1*M46lihvbDfpJl6ZGY6tgXg.jpeg)
-
-### HOW DATA ANALYSIS AT CERN CAN HELP DETECT DARK MATTER
-
-A comprehensive guide of the CERN workflow in new Physics discoveries.
-
----
 
 Are you interested in learning more about particle physics? You might have heard terms like _neutrinos_, _quarks_, or _dark matter_ mentioned before and want to know more about them. However, the literature and articles involved mainly use terms and concepts that the reader is supposed to already know, which makes them inaccessible to anyone not in this field.
 
@@ -33,7 +25,7 @@ My experience with this subject comes from my undergraduate project in Physics d
 
 ---
 
-#### **Standard Model Basics**
+## Standard Model Basics
 
 We’ll start with a short description of the [Standard Model](https://en.wikipedia.org/wiki/Standard_Model#:~:text=The%20Standard%20Model%20of%20particle%20physics%20is%20the%20theory%20describing,classifying%20all%20known%20elementary%20particles.) (SM), the theory that describes the structure of matter and its interactions. It’s worth noting that the terminology _model_ comes from the 1970s, when this theory didn’t have enough experimental evidence to support it as such, while nowadays it does.
 
@@ -57,9 +49,7 @@ The last piece of the puzzle in the SM is the **Higgs boson**, which couples to 
 
 This may seem like a lot of information at once, but don’t worry, the goal of this overview of the SM is to give some context and familiarise you with the forces and particles that rule our universe, you can always reread it later.
 
----
-
-#### **What is Dark Matter?**
+## What is Dark Matter?
 
 We’ve talked about dark matter in this article before, but we haven’t really given any sort of description of it; we’ll tackle this briefly in this section, discussing the evidence that supports its existence as well.
 
@@ -74,21 +64,12 @@ So, now we know most of the universe is made out of some sort of matter/energy t
 
 As you can guess, knowing that around 90% of the universe is made out of something we don’t know makes this one of the main research topics of modern-day physics, including searches in particle accelerators like LHC.
 
----
-
-#### **The CMS detector of the LHC**
+## The CMS detector of the LHC
 
 The LHC is the biggest, most powerful particle collider in the world, and provides the best opportunity to discover new particles, like dark matter. In this article, we’ll focus on CMS (_Compact Muon Solenoid_), but the data collection and general workflow apply to the other three main detectors: ATLAS, ALICE, and LHCb.
 
 Its name comes from the muon chambers that, combined with the solenoid, offer the best muon detection resolution available today. There are several components in CMS that can detect all traces of different particles leaving the collision point; if you want a more detailed explanation take a look at [this article](https://arxiv.org/pdf/1306.6905.pdf). There are lots of components, as you can see, but the important thing you have to remember is that their purpose is to analyse the different tracks that different particles leave: electric charge, movement traces, energy, etc.
 
+---
+
 With all of these concepts introduced, we’re ready to dive deeper into the specifics of data collection at CERN in our second part!
-
-[**Quantum Physics**  
-\_CMS ALGORITHMS FOR ANALYTICS AND DARK MATTER DETECTION_manuel-souto.medium.com](https://manuel-souto.medium.com/quantum-physics-c4fa1df9d1d0 "https://manuel-souto.medium.com/quantum-physics-c4fa1df9d1d0")[](https://manuel-souto.medium.com/quantum-physics-c4fa1df9d1d0)
-
-By [Manuel Souto Juan](https://medium.com/@manuel-souto) on [April 27, 2021](https://medium.com/p/31b66eaa1072).
-
-[Canonical link](https://medium.com/@manuel-souto/quantum-physics-31b66eaa1072)
-
-Exported from [Medium](https://medium.com) on September 25, 2023.

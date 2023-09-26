@@ -8,20 +8,13 @@ thumbnail_alt: Transformers outside NLP
 
 # TRANSFORMERS - multi-purpose AI models in disguise
 
-Novel applications of this powerful architecture set the bar for future AI advances.
+> **_Novel applications of this powerful architecture set the bar for future AI advances_**
 
 ---
 
-### TRANSFORMERS: multi-purpose AI models in disguise
-
-#### Novel applications of this powerful architecture set the bar for future AI advances.
-
 ![](https://cdn-images-1.medium.com/max/1200/1*-EKJaNY5il-iA-ytWc1HOw.jpeg)
 
-In the first part of this article, we took a look at the Transformer model and its main use cases related to NLP, which have hopefully broadened your understanding of the topic at hand. If you have not read it yet, I suggest you give it a brief glance first since it will help you understand its current standing.
-
-[**TRANSFORMERS: multi-purpose AI models in disguise**  
-\_Novel applications of this powerful architecture set the bar for future AI advances.\_manuel-souto.medium.com](https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-978c48fdd973 "https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-978c48fdd973")[](https://manuel-souto.medium.com/transformers-multi-purpose-ai-models-in-disguise-978c48fdd973)
+In the first part of this article, we took a look at the Transformer model and its main use cases related to NLP, which have hopefully broadened your understanding of the topic at hand.
 
 In the second part of this article, we will present novel model architectures and research employing Transformers in several fields unrelated to NLP, as well as showing some code examples of the capabilities of these remarkable new approaches.
 
@@ -37,9 +30,9 @@ As previously mentioned, the Transformer architecture provides a suitable framew
 
 After the success of the Transformer model applied to NLP tasks, people began to wonder: If it can find long-term relationships in the data and be trained efficiently, then **could it be as efficient in other tasks besides NLP**? This is the start of the current movement of research, where this model is used as the _backbone_ for many algorithms in AI and _machine learning_ previously dominated by other techniques. Some amazing contributions in other AI fields are:
 
-#### **Lip reading and text transcription**
+#### Lip reading and text transcription
 
-[![](https://cdn-images-1.medium.com/max/800/0*WsXnjjFjvkLUAXdk)](https://media.istockphoto.com/photos/woman-talking-with-alphabet-letters-coming-out-of-her-mouth-concept-picture-id675298456?k=20&m=675298456&s=612x612&w=0&h=0mIKvq4llWoxK2knLbqTqHLgclra6LCbD1mGkMlf3n0=)
+[![Figure 3: Lip reading](https://cdn-images-1.medium.com/max/800/0*WsXnjjFjvkLUAXdk)](https://media.istockphoto.com/photos/woman-talking-with-alphabet-letters-coming-out-of-her-mouth-concept-picture-id675298456?k=20&m=675298456&s=612x612&w=0&h=0mIKvq4llWoxK2knLbqTqHLgclra6LCbD1mGkMlf3n0=)
 
 A recurring problem in society is related to the transcription of texts, especially for hearing impaired people. The current advances are divided into two groups: using an audio track and transcribing it, or directly interpreting the words from the person’s lip movements. The latter problem is a lot harder to resolve since many factors are involved.
 
@@ -47,9 +40,7 @@ Potentially, this solution could provide help in situations where recording audi
 
 #### Traffic route prediction at sea
 
-[![](https://cdn-images-1.medium.com/max/800/0*Puld-s2tGeyF5Hg6)](https://www.researchgate.net/figure/2015-worldwide-maritime-traffic-density-map-The-density-is-evaluated-as-the-number-of_fig1_317201419)
-
-Figure 4: maritime traffic density map as of the year 2015.
+[![Figure 4: maritime traffic density map as of the year 2015.](https://cdn-images-1.medium.com/max/800/0*Puld-s2tGeyF5Hg6)](https://www.researchgate.net/figure/2015-worldwide-maritime-traffic-density-map-The-density-is-evaluated-as-the-number-of_fig1_317201419)
 
 One of the main focuses of AI models is the prediction of routes, either for individual people or traffic. However, in this regard, the models employed are mostly trained on land traffic since it is easier to obtain data and model it. Regarding sea traffic, the scarcity and dependence on external factors such as weather or sea currents makes it more difficult to provide accurate predictions for the next few hours.
 
