@@ -17,8 +17,8 @@
           <h2
             class="
                   font-bold
-                  text-4xl
-                  sm:text-5xl
+                  text-3xl
+                  sm:text-4xl
                   md:text-[50px]
                   text-dark
                   mb-8

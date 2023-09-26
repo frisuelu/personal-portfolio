@@ -1,5 +1,8 @@
 <script>
   import Showcase from "$lib/components/Showcase.svelte";
+
+  // Reeive the repository information on load
+  export let data;
 </script>
 
 <link
@@ -47,4 +50,4 @@
   </div>
 </section>
 
-<Showcase />
+<Showcase repositories={data.repos} />
