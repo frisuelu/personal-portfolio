@@ -1,5 +1,5 @@
 <script>
-  import Showcase from "./Showcase.svelte";
+  import Showcase from "$lib/components/Showcase.svelte";
 </script>
 
 <link

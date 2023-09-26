@@ -1,5 +1,5 @@
 <script>
-  import Carousel from "./Carousel.svelte";
+  import Carousel from "$lib/components/Carousel.svelte";
 </script>
 
 <section class="pt-20 lg:pt-[120px] pb-10 lg:pb-20">
