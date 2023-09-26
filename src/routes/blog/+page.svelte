@@ -5,18 +5,6 @@
   export let data;
 </script>
 
-<ul>
-  {#each data.posts as post}
-    <li>
-      <h2>
-        <a href={post.path}>
-          {post.meta.title}
-        </a>
-      </h2>
-      Published {post.meta.date}
-    </li>
-  {/each}
-</ul>
 
 <section class="pt-20 lg:pt-[120px] pb-10 lg:pb-20">
   <div class="container">
@@ -51,4 +39,4 @@
   </div>
 </section>
 
-<Carousel />
+<Carousel posts={data.posts}/>

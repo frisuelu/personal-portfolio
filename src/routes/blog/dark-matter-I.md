@@ -1,6 +1,9 @@
 ---
 title: Quantum Physics I — the CERN data workflow in new Physics discoveries
+subtitle: First part of the post series detailing work processes at CERN in dark matter analysis.
 date: "2021-04-27"
+thumbnail_url: "https://miro.medium.com/v2/format:webp/1*M46lihvbDfpJl6ZGY6tgXg.jpeg"
+thumbnail_alt: Dark Matter at CERN
 ---
 
 # Quantum Physics I — the CERN data workflow in new Physics discoveries.

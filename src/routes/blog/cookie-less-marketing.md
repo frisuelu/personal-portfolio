@@ -1,6 +1,9 @@
 ---
 title: Consumer-centric marketing in a cookie-less world
+subtitle: Navigate the current marketing landscape by leveraging Data Science and Machine Learning capabilities.
 date: "2022-11-28"
+thumbnail_url: "https://miro.medium.com/v2/format:webp/1*pQvGVjRtiiz-c8aBclpH4g.jpeg"
+thumbnail_alt: Consumer-centric marketing in a cookie-less world
 ---
 
 # Consumer-centric marketing in a cookie-less world

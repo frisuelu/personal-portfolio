@@ -1,9 +1,12 @@
 ---
 title: Data Clean Rooms - the key to marketing success
+subtitle: Data-driven marketing strategies employing new cookie-less approaches
 date: "2023-01-24"
+thumbnail_url: "https://miro.medium.com/v2/0*2c6gsVOpcV5fWMWN"
+thumbnail_alt: Data Clean Rooms
 ---
 
-# Data Clean Rooms: the key to marketing success
+# Data Clean Rooms - the key to marketing success
 
 Unlock the full potential of your data and remain compliant for a data-driven marketing strategy
 

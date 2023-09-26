@@ -1,6 +1,9 @@
 ---
-title: TRANSFORMERS - multi-purpose AI models in disguise I
+title: TRANSFORMERS - multi-purpose AI models in disguise (Part I)
+subtitle: First part of the post series delving into the <b>Transformer</b> architecture and its applications outside of NLP.
 date: "2022-01-10"
+thumbnail_url: "https://miro.medium.com/v2/format:webp/1*wZOvEaKZ5CUCgyFlvYfh3w.jpeg"
+thumbnail_alt: Transformers outside NLP
 ---
 
 # TRANSFORMERS - multi-purpose AI models in disguise
