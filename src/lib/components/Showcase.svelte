@@ -1,6 +1,5 @@
 <script>
   import RepoCard from "./RepoCard.svelte";
-  import github_logo from "$lib/images/github.svg";
 
   // Load repositories data
   export let repositories;
@@ -12,7 +11,6 @@
       repo_name={repo.name}
       repo_url={repo.html_url}
       repo_description={repo.description}
-      repo_image={github_logo}
     />
   {/each}
 </div>

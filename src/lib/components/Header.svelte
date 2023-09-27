@@ -1,19 +1,55 @@
 <script>
+  import Toggle from "$lib/components/ThemeToggle.svelte";
 </script>
 
-<nav class="bg-gray-600 p-4 flex justify-between items-center">
-  <div class="container mx-auto flex items-center">
-    <!-- Use the `link` function to create route links -->
-    <a href="/" class="text-white text-2xl font-bold">Personal Portfolio</a>
-    <div class="hidden md:block">
-      <a href="/projects" class="text-white ml-4">Projects</a>
-      <a href="/blog" class="text-white ml-4">Blog</a>
-      <a href="/conferences" class="text-white ml-4">Conferences</a>
-      <a href="/about" class="text-white ml-4">About me</a>
-    </div>
-  </div>
+<nav>
+  <!-- Title -->
+  <a href="/" class="title">
+    <b>Personal Portfolio</b>
+  </a>
+  <!-- Navigation -->
+  <ul class="links">
+    <li>
+      <a href="/projects">Projects</a>
+    </li>
+    <li>
+      <a href="/blog">Blog</a>
+    </li>
+    <li>
+      <a href="/conferences">Conferences</a>
+    </li>
+    <li>
+      <a href="/about">About</a>
+    </li>
+  </ul>
+  <!-- Theme toggle -->
+  <Toggle />
 </nav>
 
 <style>
-  /* Add any custom styles for the header here */
+  nav {
+    padding-block: var(--size-7);
+  }
+
+  .links {
+    margin-block: var(--size-7);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media (min-width: 768px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .links {
+      display: flex;
+      gap: var(--size-7);
+      margin-block: 0;
+    }
+  }
 </style>

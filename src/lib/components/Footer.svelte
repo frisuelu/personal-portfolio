@@ -1,32 +1,76 @@
 <script>
-  import linkedin_logo from "$lib/images/linkedin.svg";
-  import github_logo from "$lib/images/github.svg";
-  import email_logo from "$lib/images/email.svg";
+  import { Github, LinkedinIcon, Mail } from "lucide-svelte";
 </script>
 
-<footer class="bg-gray-600 py-4">
-  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-    <div class="mb-4 md:mb-0 flex">
-      <a href="https://www.linkedin.com/in/manuel-souto-juan/" target="_blank" class="text-white mr-4">
-        <img src={linkedin_logo} alt="LinkedIn" class="w-6 h-6">
+<footer>
+  <nav>
+    <!-- Title -->
+    <a href="/" class="title">
+      <b>Personal Portfolio</b>
+    </a>
+    <!-- Navigation -->
+    <ul class="links">
+      <li>
+        <a href="/projects">Projects</a>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/conferences">Conferences</a>
+      </li>
+      <li>
+        <a href="/about">About</a>
+      </li>
+    </ul>
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/manuel-souto-juan/">
+        <LinkedinIcon />
       </a>
-      <a href="https://www.github.com/frisuelu" target="_blank" class="text-white mr-4">
-        <img src={github_logo} alt="GitHub" class="w-6 h-6">
+      <a href="https://www.github.com/frisuelu">
+        <Github />
       </a>
-      <a href="mailto:manuelsoju@hotmail.com" class="text-white">
-        <img src={email_logo} alt="Email" class="w-6 h-6">
+      <a href="mailto:manuelsoju@hotmail.com">
+        <Mail />
       </a>
     </div>
-    <div class="md:flex">
-      <a href="/" class="text-white">Home</a>
-      <a href="/projects" class="text-white ml-4">Projects</a>
-      <a href="/blog" class="text-white ml-4">Blog</a>
-      <a href="/conferences" class="text-white ml-4">Conferences</a>
-      <a href="/about" class="text-white ml-4">About me</a>
-    </div>
-  </div>
+  </nav>
 </footer>
 
 <style>
-  /* Add any custom styles for the footer here */
+  footer {
+    padding-block: var(--size-7);
+    border-top: 0.5px solid var(--border);
+  }
+
+  nav {
+    padding-block: var(--size-7);
+  }
+
+  .links {
+    margin-block: var(--size-7);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media (min-width: 768px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .links {
+      display: flex;
+      gap: var(--size-7);
+      margin-block: 0;
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: var(--size-7);
+  }
 </style>
