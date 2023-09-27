@@ -2,7 +2,7 @@
 title: Data Clean Rooms - the key to marketing success
 subtitle: Data-driven marketing strategies employing new cookie-less approaches
 date: "2023-01-24"
-thumbnail_url: "https://cdn.chimpify.net/5f896ecda8587281208b456f/2021/11/mmt-SoM-cookieLife4-dataCleanRooms-blog.jpg"
+thumbnail_url: "src/lib/images/data-clean-rooms.jpg"
 thumbnail_alt: Data Clean Rooms
 ---
 
@@ -11,8 +11,6 @@ thumbnail_alt: Data Clean Rooms
 > **_Unlock the full potential of your data and remain compliant for a data-driven marketing strategy_**
 
 ---
-
-![](https://cdn.chimpify.net/5f896ecda8587281208b456f/2021/11/mmt-SoM-cookieLife4-dataCleanRooms-blog.jpg)
 
 In this new article we bring back the subject of **Data Clean Rooms** (DCR), which are becoming more and more of a topical challenge due to the regulatory changes regarding data that are coming in Europe and, eventually, throughout the world.
 
