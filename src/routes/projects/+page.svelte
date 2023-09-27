@@ -22,4 +22,13 @@
   visiting using Svelte and SvelteKit!
 </p>
 
-<Showcase repositories={data.repos} />
+<div class="box">
+  <Showcase repositories={data.repos} />
+</div>
+
+<style>
+  .box {
+    height: var(--size-fluid-12);
+    width: var(--size-fluid-12);
+  }
+</style>

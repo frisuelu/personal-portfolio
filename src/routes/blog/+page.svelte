@@ -1,5 +1,5 @@
 <script>
-  import Carousel from "$lib/components/Carousel.svelte";
+  import Grid from "$lib/components/Grid.svelte";
 
   // Retrieve the dynamic available posts
   export let data;
@@ -15,4 +15,4 @@
   content.
 </p>
 
-<Carousel posts={data.posts} />
+<Grid posts={data.posts} />
