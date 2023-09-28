@@ -15,12 +15,12 @@
   $: playlistId = getPlaylistId(playlistSrc);
 </script>
 
-<div class="video-container">
+<div style="--aspect-ratio: 16/9;">
   {#if playlistId}
     <iframe
       title={playlist_title}
-      width="560"
-      height="315"
+      width="640"
+      height="360"
       src={`https://www.youtube.com/embed/videoseries?list=${playlistId}`}
       frameborder="0"
       allowfullscreen
@@ -31,5 +31,4 @@
 </div>
 
 <style>
-  /* Add CSS styling for your video container here */
 </style>

@@ -17,12 +17,13 @@
   $: videoId = getVideoId(src);
 </script>
 
-<div class="video-container">
+<div style="--aspect-ratio: 16/9;">
   {#if videoId}
     <iframe
       title={video_title}
-      width="560"
-      height="315"
+      class="responsive-iframe"
+      width="640"
+      height="360"
       src={`https://www.youtube.com/embed/${videoId}`}
       frameborder="0"
       allowfullscreen
@@ -33,5 +34,4 @@
 </div>
 
 <style>
-  /* Add CSS styling for your video container here */
 </style>

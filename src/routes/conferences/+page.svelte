@@ -1,6 +1,10 @@
 <script>
-  import VideoEmbed from "$lib/components/VideoEmbed.svelte";
-  import VideoPlaylistEmbed from "$lib/components/VideoPlaylistEmbed.svelte";
+  import YoutubeEmbed from "$lib/components/YoutubeEmbed.svelte";
+  import YoutubePlaylistEmbed from "$lib/components/YoutubePlaylistEmbed.svelte";
+  import VimeoEmbed from "$lib/components/VimeoEmbed.svelte";
+
+  // Responsive grid component
+  import Grid from "svelte-grid-responsive";
 </script>
 
 <h1>
@@ -26,11 +30,26 @@
 <!-- https://media.licdn.com/dms/image/D4D22AQGRm2KFmJiPWw/feedshare-shrink_1280/0/1680681504991?e=1698883200&v=beta&t=hG4qSH5Vo0l88rfCTYCHhxrYSwlarKy64_Ewn0-UmEI -->
 <!-- https://media.licdn.com/dms/image/C4E22AQGA3tgYWpvNZQ/feedshare-shrink_800/0/1665670942087?e=1698883200&v=beta&t=XMvn2A57Koj1W6l8HZ-UqYvsjxGAjduuMKrabWaYwHU -->
 
-<VideoEmbed
-  src="https://www.youtube.com/watch?v=CWaalYJR8qI&t=10486s"
-  video_title="DataForum conference June 2023"
-/>
-<VideoPlaylistEmbed
-  playlistSrc="https://youtube.com/playlist?list=PLfcYOdV5W3jCNdvrpBgk-OL3uaIhDUQfA&si=j2isE1i7TNSXEy3a"
-  playlist_title="DEADPROGRAM Twitch streamings"
-/>
+<Grid container gutter={10} columns={2}>
+  <Grid>
+    <VimeoEmbed
+      src="https://vimeo.com/836601829"
+      video_title="DataForum 2023 - short version"
+    />
+  </Grid>
+  <Grid>
+    <YoutubeEmbed
+      src="https://www.youtube.com/watch?v=CWaalYJR8qI&t=10486s"
+      video_title="DataForum conference June 2023"
+    />
+  </Grid>
+  <Grid>
+    <YoutubePlaylistEmbed
+      playlistSrc="https://youtube.com/playlist?list=PLfcYOdV5W3jCNdvrpBgk-OL3uaIhDUQfA&si=j2isE1i7TNSXEy3a"
+      playlist_title="DEADPROGRAM Twitch streamings"
+    />
+  </Grid>
+</Grid>
+
+<style>
+</style>
