@@ -1,33 +1,24 @@
-<link
-  rel="stylesheet"
-  href="https://cdn.tailgrids.com/tailgrids-fallback.css"
-/>
-
 <svelte:head>
-  <title>Home</title>
-  <meta name="description" content="Svelte demo app" />
+  <title>Personal porfolio - Manuel Souto Juan</title>
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="Personal portfolio of Manuel Souto Juan"
+  />
+  <meta
+    name="keywords"
+    content="Data Science, AI, Machine Learning, Technology"
+  />
+  <meta name="author" content="Manuel Souto Juan" />
+  <meta property="og:type" content="blog" />
+  <meta property="og:title" content="Personal portfolio - Manuel Souto Juan" />
 </svelte:head>
 
-<section>
+<div align="center" class="landing_title">
   <h1>
-    to your new<br />SvelteKit app
+    <b>Landing Page</b>
   </h1>
-
-  <h2>
-    try editing <strong>src/routes/+page.svelte</strong>
-  </h2>
-</section>
-
-<style>
-  section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 0.6;
-  }
-
-  h1 {
-    width: 100%;
-  }
-</style>
+  <p>
+    <br />WIP
+  </p>
+</div>

@@ -3,11 +3,7 @@
   import Carousel from "svelte-carousel";
 
   // Load the images from the folder
-  let images = [
-    "src/lib/images/anban_conference.jpg",
-    "src/lib/images/anban_conference_2.jpg",
-    "src/lib/images/anban_conference_3.jpg",
-  ];
+  export let images;
 </script>
 
 {#if browser}
@@ -24,7 +20,7 @@
           <img
             class="thumbnail"
             {src}
-            alt="ANBAN Data conference 2023 - Photo ${imageIndex}"
+            alt="Carousel - Photo {imageIndex}"
           />
         {/if}
       </div>

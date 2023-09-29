@@ -50,15 +50,6 @@
     object-fit: cover;
   }
 
-  .button {
-    color: var(--gray-6);
-    border: 1px solid var(--gray-6);
-    padding: var(--size-2); /* Add padding to the date button */
-    border-radius: var(
-      --radius-3
-    ); /* Optional: Add border-radius for rounded corners */
-  }
-
   .blog_content {
     flex: 1; /* Allow the content to expand and fill the available space */
   }

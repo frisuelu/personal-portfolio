@@ -16,6 +16,7 @@ html {
   --surface-4-dark: var(--gray-9);
   --background-dark: var(--gradient-8);
   --border-dark: var(--gray-9);
+  --button-dark: var(--gray-4);
 
   /* light */
   --brand-light: var(--orange-10);
@@ -27,6 +28,7 @@ html {
   --surface-4-light: var(--gray-3);
   --background-light: none;
   --border-light: var(--gray-4);
+  --button-light: var(--gray-9);
 }
 
 :root {
@@ -41,6 +43,7 @@ html {
   --surface-4: var(--surface-4-dark);
   --background: var(--background-dark);
   --border: var(--border-dark);
+  --button: var(--button-dark);
 }
 
 @media (prefers-color-scheme: light) {
@@ -56,6 +59,7 @@ html {
     --surface-4: var(--surface-4-light);
     --background: var(--background-light);
     --border: var(--border-light);
+    --button: var(--button-light);
   }
 }
 
@@ -71,6 +75,7 @@ html {
   --surface-4: var(--surface-4-dark);
   --background: var(--background-dark);
   --border: var(--border-dark);
+  --button: var(--button-dark);
 }
 
 [color-scheme="light"] {
@@ -85,6 +90,7 @@ html {
   --surface-4: var(--surface-4-light);
   --background: var(--background-light);
   --border: var(--border-light);
+  --button: var(--button-light);
 }
 
 html,
@@ -111,6 +117,15 @@ ol {
 
 li {
   padding-inline-start: var(--size-relative-1);
+}
+
+.button {
+  color: var(--button);
+  border: 1px solid var(--button);
+  padding: var(--size-2); /* Add padding to the date button */
+  border-radius: var(
+    --radius-3
+  ); /* Optional: Add border-radius for rounded corners */
 }
 
 .surface-1 {

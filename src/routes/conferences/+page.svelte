@@ -6,6 +6,20 @@
 
   // Responsive grid component
   import Grid from "svelte-grid-responsive";
+
+  let anbanImages = [
+    "src/lib/images/anban_conference.jpg",
+    "src/lib/images/anban_conference_2.jpg",
+    "src/lib/images/anban_conference_3.jpg",
+  ];
+
+  let universityImages = [
+    "src/lib/images/university_1.jpg",
+    "src/lib/images/university_2.jpg",
+    "src/lib/images/university_3.jpg",
+    "src/lib/images/university_4.jpg",
+    "src/lib/images/university_5.jpg",
+  ];
 </script>
 
 <!-- SEO -->
@@ -73,17 +87,35 @@
   </Grid>
 </div>
 
-<!-- <div align="center" class="half_text"> -->
-<!--   <div class="image_carousel"> -->
-<!--     <ImageCarousel /> -->
-<!--   </div> -->
-<!--   <div align="left"> -->
-<!--     <h2>ANBAN conference</h2> -->
-<!--     <p> -->
-<!--       <br />placeholder -->
-<!--     </p> -->
-<!--   </div> -->
-<!-- </div> -->
+<div align="center" class="half_text">
+  <div class="image_carousel">
+    <ImageCarousel images={anbanImages} />
+  </div>
+  <div align="left">
+    <h2>ANBAN conference</h2>
+    <p>
+      <br />ANBAN (Asociación nacional Big Data y Analytics) is a non-for-profit
+      association focused on promoting data related knowledge and activities. I
+      was invited as part of a group of proffesionals in the sector to discuss
+      how I use data in my day-to-day job to solve real-world problems.
+    </p>
+  </div>
+</div>
+
+<div align="center" class="half_text">
+  <div align="left">
+    <h2>Collaborations with University of Oviedo</h2>
+    <p>
+      <br />As a former alumni of the Faculty of Sciencies, I keep a strong
+      relationship with the University up to this day. During these past years I
+      have attended several events and chats with current students to discuss
+      the future of data, questions, and overall guidance in the sector.
+    </p>
+  </div>
+  <div class="image_carousel">
+    <ImageCarousel images={universityImages} />
+  </div>
+</div>
 
 <div align="center" class="half_text">
   <div align="left">
