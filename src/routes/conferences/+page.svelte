@@ -2,6 +2,7 @@
   import YoutubeEmbed from "$lib/components/YoutubeEmbed.svelte";
   import YoutubePlaylistEmbed from "$lib/components/YoutubePlaylistEmbed.svelte";
   import VimeoEmbed from "$lib/components/VimeoEmbed.svelte";
+  import ImageCarousel from "$lib/components/ImageCarousel.svelte";
 
   // Responsive grid component
   import Grid from "svelte-grid-responsive";
@@ -72,40 +73,19 @@
   </Grid>
 </div>
 
-<div align="center" class="left_aligned_text">
-  <div align="left">
-    <h2>TinyGo streamings</h2>
-    <p>
-      <br />I have also had the pleasure to collaborate with Ron Evans (AKA
-      <a href="https://github.com/deadprogram" title="@deadprogram"
-        >@deadprogram</a
-      >), Go guru, technologist for hire, influencer and overall amazing person!
-      In the following Youtube playlist where the Twitch streamings are
-      recorded, I was leveraging the Go implementation of OpenCV named
-      <b>GoCV</b> to interface an object detection model to detect... cows
-      (don't ask about that, we're a bit weird in Asturias 😅). <br /><br />
-      I have also learned a lot about Go, TinyGo and microdevices (check out the
-      <a
-        href="https://github.com/frisuelu/physical-LED-dashboard"
-        title="GitHub repo for LED dashboard">LED dashboard project</a
-      > I developed if you are interested!).
-    </p>
-  </div>
-  <div align="right">
-    <YoutubePlaylistEmbed
-      playlistSrc="https://youtube.com/playlist?list=PLfcYOdV5W3jCNdvrpBgk-OL3uaIhDUQfA&si=j2isE1i7TNSXEy3a"
-      playlist_title="DEADPROGRAM Twitch streamings"
-    />
-  </div>
-</div>
+<!-- <div align="center" class="half_text"> -->
+<!--   <div class="image_carousel"> -->
+<!--     <ImageCarousel /> -->
+<!--   </div> -->
+<!--   <div align="left"> -->
+<!--     <h2>ANBAN conference</h2> -->
+<!--     <p> -->
+<!--       <br />placeholder -->
+<!--     </p> -->
+<!--   </div> -->
+<!-- </div> -->
 
-<div align="center" class="left_aligned_text">
-  <div align="right">
-    <YoutubePlaylistEmbed
-      playlistSrc="https://youtube.com/playlist?list=PLfcYOdV5W3jCNdvrpBgk-OL3uaIhDUQfA&si=j2isE1i7TNSXEy3a"
-      playlist_title="DEADPROGRAM Twitch streamings"
-    />
-  </div>
+<div align="center" class="half_text">
   <div align="left">
     <h2>TinyGo streamings</h2>
     <p>
@@ -123,6 +103,12 @@
         title="GitHub repo for LED dashboard">LED dashboard project</a
       > I developed if you are interested!).
     </p>
+  </div>
+  <div>
+    <YoutubePlaylistEmbed
+      playlistSrc="https://youtube.com/playlist?list=PLfcYOdV5W3jCNdvrpBgk-OL3uaIhDUQfA&si=j2isE1i7TNSXEy3a"
+      playlist_title="DEADPROGRAM Twitch streamings"
+    />
   </div>
 </div>
 
@@ -141,11 +127,35 @@
     border-top: 0.5px solid var(--border);
   }
 
-  .left_aligned_text {
+  .half_text {
     padding-top: var(--size-fluid-5);
     padding-bottom: var(--size-fluid-5);
     border-top: 0.5px solid var(--border);
-    column-gap: var(--size-fluid-2);
+    row-gap: var(--size-fluid-3);
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .half_text > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Additional styles for large screens */
+  @media (min-width: 1200px) {
+    .half_text {
+      flex-direction: row; /* Side by side on larger screens */
+      column-gap: var(--size-fluid-3);
+    }
+  }
+
+  .image_carousel {
+    /* Add styles for your carousel, ensure it is responsive */
+    /* Example styles for responsive carousel */
+    align-items: center;
+    width: 60%; /* Adjust width as needed */
+    max-width: 100%; /* Ensures the carousel doesn't exceed its parent container */
   }
 </style>
