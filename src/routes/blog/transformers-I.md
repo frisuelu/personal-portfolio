@@ -1,18 +1,19 @@
 ---
 title: TRANSFORMERS - multi-purpose AI models in disguise (Part I)
-subtitle: First part of the post series delving into the <b>Transformer</b> architecture and its applications outside of NLP.
+subtitle: First part of the post series delving into the Transformer architecture and its applications outside of NLP.
 date: "2022-01-09"
 thumbnail_url: "https://miro.medium.com/v2/format:webp/1*wZOvEaKZ5CUCgyFlvYfh3w.jpeg"
 thumbnail_alt: Transformers outside NLP
+media: Posted on Medium
 ---
 
 # TRANSFORMERS - multi-purpose AI models in disguise
 
-> **_Novel applications of this powerful architecture set the bar for future AI advances_**
-
----
+### Novel applications of this powerful architecture set the bar for future AI advances
 
 ![](https://cdn-images-1.medium.com/max/1200/1*wZOvEaKZ5CUCgyFlvYfh3w.jpeg)
+
+---
 
 If you have dug deep into _machine learning_ algorithms, you will probably have heard of terms such as _neural networks_ or _natural language processing_ (NLP). Regarding the latter, a powerful model architecture has appeared in the last few years that has disrupted the _text mining_ industry: **The Transformer**. This model has altered the way researchers focus on analysing texts, introducing a novel analysis that has improved the models used previously. In the NLP field, it has become the game-changer mechanism and it is the main focus of research around the world. This has brought the model wide recognition, especially through developments such as OpenAI’s GPT-3 model for the generation of text.
 
@@ -59,20 +60,35 @@ Another great thing about the Transformer research community is the willingness 
 Using these models is also very easy with the help of their library, in just a few lines of code we can use pre-trained models for different tasks. One of those is the use of over 1000 translation models developed by the University of Helsinki:
 
 ```python
-\# Import the libraries  
-from transformers import MarianMTModel, MarianTokenizer  
+# Import the libraries
+from transformers import MarianMTModel, MarianTokenizer
 import torch
 
-\# Load a pretrained "English to Spanish" model  
-tokenizer = MarianTokenizer.from_pretrained("Helsinki-NLP/opus-mt-en-es")
+# Load a pretrained "English to Spanish" model
+tokenizer = MarianTokenizer.from_pretrained(
+    "Helsinki-NLP/opus-mt-en-es"
+)
 
-model = MarianMTModel.from_pretrained("Helsinki-NLP/opus-mt-en-es")
+model = MarianMTModel.from_pretrained(
+    "Helsinki-NLP/opus-mt-en-es"
+)
 
-\# Input a sentence  
-input = tokenizer("Transformers are a really cool tool for multiple NLP tasks, but they can do so much more!!", return_tensors = 'pt', padding = True)
+# Input a sentence
+input = tokenizer(
+    (
+        "Transformers are a really cool tool for multiple NLP tasks, "
+        "but they can do so much more!!"
+    ),
+    return_tensors = 'pt',
+    padding = True
+)
 
-\# Print the results  
-print(tokenizer.batch_decode(model.generate(\*\*input), skip_special_tokens=True)\[0\])
+# Print the results
+print(
+    tokenizer.batch_decode(
+        model.generate(**input),
+        skip_special_tokens=True)[0]
+    )
 ```
 
 The output is the sentence: **Los transformadores son una herramienta realmente genial para múltiples tareas NLP, pero pueden hacer mucho más!!**

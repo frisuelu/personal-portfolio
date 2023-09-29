@@ -4,11 +4,12 @@ subtitle: First part of the post series detailing work processes at CERN in dark
 date: "2021-04-26"
 thumbnail_url: "https://miro.medium.com/v2/format:webp/1*M46lihvbDfpJl6ZGY6tgXg.jpeg"
 thumbnail_alt: Dark Matter at CERN
+media: Posted on Medium
 ---
 
 # Quantum Physics I — the CERN data workflow in new Physics discoveries.
 
-> **_HOW DATA ANALYSIS AT CERN CAN HELP DETECT DARK MATTER_**
+### The data analysis process at CERN in order to detect Dark Matter 
 
 ---
 

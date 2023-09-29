@@ -4,11 +4,30 @@ subtitle: Data-driven marketing strategies employing new cookie-less approaches
 date: "2023-01-24"
 thumbnail_url: "src/lib/images/data-clean-rooms.jpg"
 thumbnail_alt: Data Clean Rooms
+media: Posted on Medium
 ---
+
+<script>
+    /*
+    This is required since pointing to a local file within Markdown in the
+    deployed website requires the absolute path...
+    */
+
+    // Get the public URL of the app
+    const { BASE_URL } = import.meta.env;
+
+    // Path to image file relative to the public directory
+    const imagePath = 'src/lib/images/data-clean-rooms.jpg';
+
+    // Absolute URL to the image
+    const imageUrl = `${BASE_URL}${imagePath}`;
+</script>
 
 # Data Clean Rooms - the key to marketing success
 
-> **_Unlock the full potential of your data and remain compliant for a data-driven marketing strategy_**
+### Unlock the full potential of your data and remain compliant for a data-driven marketing strategy
+
+![Data Clean Rooms thumbnail]({imageUrl})
 
 ---
 

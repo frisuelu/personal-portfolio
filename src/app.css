@@ -133,7 +133,7 @@ li {
   color: var(--text-1);
 }
 
-/* ... */
+/* CSS below affects the Markdown blog posts */
 
 .prose :is(h2, h3, h4, h5, h6) {
   margin-top: var(--size-8);
@@ -145,7 +145,7 @@ li {
 }
 
 .prose :is(ul, ol) {
-  list-style-type: "🔥";
+  list-style-type: "→";
   padding-left: var(--size-5);
 }
 

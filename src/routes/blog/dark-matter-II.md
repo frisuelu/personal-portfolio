@@ -4,19 +4,18 @@ subtitle: Second part of the post series detailing work processes at CERN in dar
 date: "2021-04-27"
 thumbnail_url: "https://miro.medium.com/v2/format:webp/1*M46lihvbDfpJl6ZGY6tgXg.jpeg"
 thumbnail_alt: Dark Matter at CERN
+media: Posted on Medium
 ---
 
 # Quantum Physics II — Data collection, modelling, and analysis at CMS CERN
 
-> **_HOW DATA ANALYSIS AT CERN CAN HELP DETECT DARK MATTER_**
-
----
+### The data analysis process at CERN in order to detect Dark Matter
 
 ![](https://cdn-images-1.medium.com/max/2560/1*M46lihvbDfpJl6ZGY6tgXg.jpeg)
 
-In this second part of the previous introductory article, we’ll tackle the more in-depth description of data collection, object modelling, and data analysis at CMS. The general workflow behind these kinds of experiments is complex, but I’ll try to give a brief description of each part so you can get a general idea of the whole process.
-
 ---
+
+In this second part of the previous introductory article, we’ll tackle the more in-depth description of data collection, object modelling, and data analysis at CMS. The general workflow behind these kinds of experiments is complex, but I’ll try to give a brief description of each part so you can get a general idea of the whole process.
 
 ## Analysis of a collision and important concepts
 

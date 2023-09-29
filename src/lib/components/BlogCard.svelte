@@ -5,58 +5,65 @@
   export let date;
   export let title;
   export let subtitle;
+  export let media;
 </script>
 
-<link
-  rel="stylesheet"
-  href="https://cdn.tailgrids.com/tailgrids-fallback.css"
-/>
-
-<!-- New item -->
-<div class="w-full md:w-1/2 lg:w-1/3 px-4">
-  <div class="max-w-[370px] mx-auto mb-10">
-    <div class="rounded overflow-hidden mb-8">
-      <img src={thumbnail_url} alt={thumbnail_alt} class="w-full" />
-    </div>
-    <div>
-      <span
-        class="
-                     bg-primary
-                     rounded
-                     inline-block
-                     text-center
-                     py-1
-                     px-4
-                     text-xs
-                     leading-loose
-                     font-semibold
-                     text-white
-                     mb-5
-                     "
-      >
-        {date}
-      </span>
-      <h3>
-        <a
-          href={article_url}
-          class="
-                        font-semibold
-                        text-xl
-                        sm:text-2xl
-                        lg:text-xl
-                        xl:text-2xl
-                        mb-4
-                        inline-block
-                        text-dark
-                        hover:text-primary
-                        "
-        >
+<div class="container">
+  <div class="blog_thumbnail">
+    <img src={thumbnail_url} alt={thumbnail_alt} />
+  </div>
+  <div class="blog_content">
+    <span class="button">
+      {date}
+    </span>
+    <span class="button">
+      {media}
+    </span>
+    <div class="blog_description">
+      <h4>
+        <a href={article_url}>
           {title}
         </a>
-      </h3>
-      <p class="text-base text-body-color">
+      </h4>
+      <p>
         {subtitle}
       </p>
     </div>
   </div>
 </div>
+
+<style>
+  .container {
+    margin-top: var(--size-fluid-4);
+    padding: var(--size-relative-5);
+    width: var(--size-15);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog_thumbnail {
+    height: var(--size-fluid-13);
+    width: var(--size-15);
+    margin-bottom: var(
+      --size-fluid-3
+    ); /* Add margin between thumbnail and content */
+    object-fit: cover;
+  }
+
+  .button {
+    color: var(--gray-6);
+    border: 1px solid var(--gray-6);
+    padding: var(--size-2); /* Add padding to the date button */
+    border-radius: var(
+      --radius-3
+    ); /* Optional: Add border-radius for rounded corners */
+  }
+
+  .blog_content {
+    flex: 1; /* Allow the content to expand and fill the available space */
+  }
+
+  .blog_description {
+    margin-top: var(--size-relative-6);
+  }
+</style>

@@ -4,19 +4,16 @@ subtitle: Navigate the current marketing landscape by leveraging Data Science an
 date: "2022-11-28"
 thumbnail_url: "https://miro.medium.com/v2/format:webp/1*pQvGVjRtiiz-c8aBclpH4g.jpeg"
 thumbnail_alt: Consumer-centric marketing in a cookie-less world
+media: Posted on Medium
 ---
 
 # Consumer-centric marketing in a cookie-less world
 
-Build a future-proof marketing strategy by leveraging Data Science and Machine Learning capabilities
-
----
-
-### Consumer-centric marketing in a cookie-less world
-
-#### Build a future-proof marketing strategy by leveraging Data Science and Machine Learning capabilities
+### Build a future-proof marketing strategy by leveraging Data Science and Machine Learning capabilities
 
 ![Consumer-centric marketing in a cookie-less world](https://cdn-images-1.medium.com/max/800/1*pQvGVjRtiiz-c8aBclpH4g.jpeg)
+
+---
 
 It’s not an understatement to say that data has become a crucial part of marketing & media planning, fully integrated into the current workflows. However, new privacy regulations around personal data and its use are coming (or are already here!), and many brands and marketeers are wondering how they can still understand their audiences and stay relevant while also being privacy compliant.
 

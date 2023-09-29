@@ -1,18 +1,19 @@
 ---
 title: TRANSFORMERS - multi-purpose AI models in disguise (Part II)
-subtitle: Second part of the post series delving into the <b>Transformer</b> architecture and its applications outside of NLP.
+subtitle: Second part of the post series delving into the Transformer architecture and its applications outside of NLP.
 date: "2022-01-10"
 thumbnail_url: "https://miro.medium.com/v2/format:webp/1*-EKJaNY5il-iA-ytWc1HOw.jpeg"
 thumbnail_alt: Transformers outside NLP
+media: Posted on Medium
 ---
 
 # TRANSFORMERS - multi-purpose AI models in disguise
 
-> **_Novel applications of this powerful architecture set the bar for future AI advances_**
-
----
+### Novel applications of this powerful architecture set the bar for future AI advances
 
 ![](https://cdn-images-1.medium.com/max/1200/1*-EKJaNY5il-iA-ytWc1HOw.jpeg)
+
+---
 
 In the first part of this article, we took a look at the Transformer model and its main use cases related to NLP, which have hopefully broadened your understanding of the topic at hand.
 
@@ -60,34 +61,38 @@ For most of these models, the code and training data are publicly available and 
 
 First, install the dependencies and load an image of your choosing using its URL:
 
-```python
-\# Install dependencies  
-!pip install -q transformers  
-!pip install -q timm
+```bash
+pip install transformers  
+pip install timm
+```
 
-\# Load the needed libraries to load images  
+```python
+# Load the needed libraries to load images  
 from PIL import Image  
 import requests
 
-\# In our case, we selected an image of a park  
-url = 'https://www.burnaby.ca/sites/default/files/acquiadam/2021-06/Parks-Fraser-Foreshore.jpg'
+# In our case, we selected an image of a park  
+url = (
+    "https://www.burnaby.ca/sites/default/files/acquiadam/2021-06/"
+    "Parks-Fraser-Foreshore.jpg"
+    )
 
 im = Image.open(requests.get(url, stream=True).raw)
 
-\# Show the image  
+# Show the image  
 im
 ```
 
-![](https://cdn-images-1.medium.com/max/800/0*skxNs07GaWuj_CCm)
-
-Figure 5: Image of a park.
+![Image of a park](https://cdn-images-1.medium.com/max/800/0*skxNs07GaWuj_CCm)
 
 Then, we apply the feature extractor to resize and normalize the image so the model can interpret it correctly. This will use the simplest DETR model, with the ResNet-50 backbone:
 
 ```python
 from transformers import DetrFeatureExtractor
 
-feature_extractor = DetrFeatureExtractor.from_pretrained("facebook/detr-resnet-50")
+feature_extractor = DetrFeatureExtractor.from_pretrained(
+    "facebook/detr-resnet-50"
+)
 
 encoding = feature_extractor(im, return_tensors="pt")
 
@@ -99,9 +104,11 @@ Next, load the pre-trained model and pass the image through:
 ```python
 from transformers import DetrForObjectDetection
 
-model = DetrForObjectDetection.from_pretrained("facebook/detr-resnet-50")
+model = DetrForObjectDetection.from_pretrained(
+    "facebook/detr-resnet-50"
+)
 
-outputs = model(\*\*encoding)
+outputs = model(**encoding)
 ```
 
 And that’s it! Now we only have to interpret the results and represent the detected objects with some boxes:
@@ -109,58 +116,73 @@ And that’s it! Now we only have to interpret the results and represent the det
 ```python 
 import matplotlib.pyplot as plt
 
-\# colors for visualization
+# colors for visualization
 
-COLORS = \[\[0.000, 0.447, 0.741\], \[0.850, 0.325, 0.098\], \[0.929, 0.694, 0.125\],
+COLORS = [
+    [0.000, 0.447, 0.741],
+    [0.850, 0.325, 0.098],
+    [0.929, 0.694, 0.125],
+    [0.494, 0.184, 0.556],
+    [0.466, 0.674, 0.188],
+    [0.301, 0.745, 0.933]
+]
 
-\[0.494, 0.184, 0.556\], \[0.466, 0.674, 0.188\], \[0.301, 0.745, 0.933\]\]
-
-\# Define an auxiliary plotting function  
+# Define an auxiliary plotting function  
 def plot_results(pil_img, prob, boxes):
 
-plt.figure(figsize=(16,10))  
- plt.imshow(pil_img)
+    plt.figure(figsize=(16,10))  
+    plt.imshow(pil_img)
 
-ax = plt.gca()  
- colors = COLORS \* 100
+    ax = plt.gca()  
+    colors = COLORS * 100
 
-for p, (xmin, ymin, xmax, ymax), c in zip(prob, boxes.tolist(), colors):
+    for p, (xmin, ymin, xmax, ymax), c in zip(prob, boxes.tolist(), colors):
 
-      ax.add\_patch(plt.Rectangle((xmin, ymin), xmax - xmin, ymax -ymin, fill=False, color=c, linewidth=3))
+        ax.add_patch(
+            plt.Rectangle(
+                (xmin, ymin),
+                xmax - xmin,
+                ymax -ymin,
+                fill=False,
+                color=c,
+                linewidth=3
+            )
+        )
 
-      cl = p.argmax()
-      text = f'{model.config.id2label\[cl.item()\]}: {p\[cl\]:0.2f}'
-      ax.text(xmin, ymin, text, fontsize=15,
+          cl = p.argmax()
+          text = f"{model.config.id2label[cl.item()]}: {p[cl]:0.2f}"
+          ax.text(xmin, ymin, text, fontsize=15,
 
-      bbox=dict(facecolor='yellow', alpha=0.5))
-      plt.axis('off')
-      plt.show()
+          bbox=dict(facecolor='yellow', alpha=0.5))
+          plt.axis('off')
+          plt.show()
 
 import torch
 
-\# keep only predictions of queries with 0.9+ confidence (excluding no-object class)  
-probas = outputs.logits.softmax(-1)\[0, :, :-1\]  
+# keep only predictions of queries with 0.9+ confidence (excluding
+# no-object class)  
+probas = outputs.logits.softmax(-1)[0, :, :-1]  
 keep = probas.max(-1).values > 0.9
 
-\# rescale bounding boxes
+# rescale bounding boxes
 
-target_sizes = torch.tensor(im.size\[::-1\]).unsqueeze(0)
+target_sizes = torch.tensor(im.size[::-1]).unsqueeze(0)
 
 postprocessed_outputs = feature_extractor.post_process(outputs, target_sizes)
 
-bboxes_scaled = postprocessed_outputs\[0\]\['boxes'\]\[keep\]
+bboxes_scaled = postprocessed_outputs[0]['boxes'][keep]
 
-\# Show the detection results  
-plot_results(im, probas\[keep\], bboxes_scaled)
+# Show the detection results  
+plot_results(im, probas[keep], bboxes_scaled)
 ```
 
-![](https://cdn-images-1.medium.com/max/800/0*4vUBdKuSJoWvQgqB)
+![DETR object detection output with bounding boxes](https://cdn-images-1.medium.com/max/800/0*4vUBdKuSJoWvQgqB)
 
-Figure 6: DETR object detection output. Bounding boxes appear around each object, where the value indicates the detection confidence.
+Bounding boxes appear around each object, where the value indicates the detection confidence.
 
 The accuracy of these models is remarkable! Even smaller objects, which are harder to detect for the usual neural networks, are identified correctly. Thank you [Niels Rogge](https://github.com/NielsRogge) for the awesome [implementation](https://github.com/NielsRogge/Transformers-Tutorials) of these models in the _Transformers_ library!
 
 These examples are just the tip of the iceberg of this research movement. The high flexibility of this architecture and the numerous advantages provided are well suited for a number of AI tasks, and multiple advances are being made on a daily basis on multiple fronts. Recently, Facebook AI published a new paper presenting the scalability of these models for CV tasks that has stirred the community quite a bit; you can also check it out [here](https://medium.com/syncedreview/a-leap-forward-in-computer-vision-facebook-ai-says-masked-autoencoders-are-scalable-vision-32c08fadd41f).
 
-> Will this be the future of all AI models? Is the Transformer the best solution for all tasks, or will it be resigned to its NLP applications? One thing is for sure: For the time being, the Transformer is here to stay!
+Will this be the future of all AI models? Is the Transformer the best solution for all tasks, or will it be resigned to its NLP applications? One thing is for sure: For the time being, the Transformer is here to stay!
 
