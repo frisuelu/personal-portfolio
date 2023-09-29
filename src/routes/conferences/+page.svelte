@@ -7,49 +7,145 @@
   import Grid from "svelte-grid-responsive";
 </script>
 
-<h1>
-  <b>Talks, conferences and content</b>
-</h1>
+<!-- SEO -->
+<svelte:head>
+  <title>Conferences - Manuel Souto Juan</title>
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="Conferences and public talks by Manuel Souto Juan"
+  />
+  <meta
+    name="keywords"
+    content="Data Science, AI, Machine Learning, Technology"
+  />
+  <meta name="author" content="Manuel Souto Juan" />
+  <meta property="og:type" content="video" />
+  <meta property="og:title" content="Conferences - Manuel Souto Juan" />
+</svelte:head>
 
-<p>
-  <br />I have participated in multiple university talks and conferences where I
-  have had the opportunity to share my knowledge and experiences around data
-  with both technical and young people interested in getting into the field of
-  Data Science, as well as non-technical people that are trying to understand
-  what data entails and how it will impact them (this goes doublefold for
-  businesses trying to become data-driven).
-</p>
+<div align="center" class="landing_title">
+  <h1>
+    <b>Talks, conferences and content</b>
+  </h1>
+  <p>
+    <br />I have participated in multiple university talks and conferences where
+    I have had the opportunity to share my knowledge and experiences around data
+    with both technical and young people interested in getting into the field of
+    Data Science, as well as non-technical people that are trying to understand
+    what data entails and how it will impact them (this goes doublefold for
+    businesses trying to become data-driven).
+  </p>
+</div>
 
 <!-- Add below the embedded content from Youtube, Twitch, LinkedIn... -->
-<!-- https://vimeo.com/836601829 -->
-<!-- https://www.youtube.com/watch?v=CWaalYJR8qI&t=10486s -->
-<!-- https://youtube.com/playlist?list=PLfcYOdV5W3jCNdvrpBgk-OL3uaIhDUQfA&si=j2isE1i7TNSXEy3a -->
 <!-- https://media.licdn.com/dms/image/C4E22AQHZ9t2-Y3gl0Q/feedshare-shrink_2048_1536/0/1650557116329?e=1698883200&v=beta&t=3BRTxZojS1Za7pvNg6hT6F0Kb9aISbwpzyDkm8_uTOY -->
 <!-- https://media.licdn.com/dms/image/C4E22AQEvkByM4TMppQ/feedshare-shrink_1280/0/1650557114558?e=1698883200&v=beta&t=00c1VxlMrX811tEgwNJ8g1n0TElgNmONXJA4QCCTWSk -->
 <!-- https://media.licdn.com/dms/image/D4D22AQGGm5A8fGQsQw/feedshare-shrink_1280/0/1680681505869?e=1698883200&v=beta&t=53VyXcu1TNSSKi5yUOeWUs7vP-k9y9l9ItVH4jkHWAA -->
 <!-- https://media.licdn.com/dms/image/D4D22AQGRm2KFmJiPWw/feedshare-shrink_1280/0/1680681504991?e=1698883200&v=beta&t=hG4qSH5Vo0l88rfCTYCHhxrYSwlarKy64_Ewn0-UmEI -->
 <!-- https://media.licdn.com/dms/image/C4E22AQGA3tgYWpvNZQ/feedshare-shrink_800/0/1665670942087?e=1698883200&v=beta&t=XMvn2A57Koj1W6l8HZ-UqYvsjxGAjduuMKrabWaYwHU -->
 
-<Grid container gutter={10} columns={2}>
-  <Grid>
-    <VimeoEmbed
-      src="https://vimeo.com/836601829"
-      video_title="DataForum 2023 - short version"
-    />
+<div class="video_grid" align="center">
+  <div class="section_heading_top">
+    <h2>DATAfórum 2023</h2>
+    <p>
+      <br />I had the pleasure of attending the DataForum event organised by the
+      Spanish Ministry of Justice on June, where I presented a short masterclass
+      on AI for people in the government and legal space. Although we know not
+      everything is ChatGPT, in the end we are still talking about it all the
+      time...
+    </p>
+  </div>
+  <Grid container gutter={10} columns={2}>
+    <Grid>
+      <VimeoEmbed
+        src="https://vimeo.com/836601829"
+        video_title="DataForum 2023 - short version"
+      />
+    </Grid>
+    <Grid>
+      <YoutubeEmbed
+        src="https://www.youtube.com/watch?v=CWaalYJR8qI&t=10486s"
+        video_title="DataForum conference June 2023"
+      />
+    </Grid>
   </Grid>
-  <Grid>
-    <YoutubeEmbed
-      src="https://www.youtube.com/watch?v=CWaalYJR8qI&t=10486s"
-      video_title="DataForum conference June 2023"
-    />
-  </Grid>
-  <Grid>
+</div>
+
+<div align="center" class="left_aligned_text">
+  <div align="left">
+    <h2>TinyGo streamings</h2>
+    <p>
+      <br />I have also had the pleasure to collaborate with Ron Evans (AKA
+      <a href="https://github.com/deadprogram" title="@deadprogram"
+        >@deadprogram</a
+      >), Go guru, technologist for hire, influencer and overall amazing person!
+      In the following Youtube playlist where the Twitch streamings are
+      recorded, I was leveraging the Go implementation of OpenCV named
+      <b>GoCV</b> to interface an object detection model to detect... cows
+      (don't ask about that, we're a bit weird in Asturias 😅). <br /><br />
+      I have also learned a lot about Go, TinyGo and microdevices (check out the
+      <a
+        href="https://github.com/frisuelu/physical-LED-dashboard"
+        title="GitHub repo for LED dashboard">LED dashboard project</a
+      > I developed if you are interested!).
+    </p>
+  </div>
+  <div align="right">
     <YoutubePlaylistEmbed
       playlistSrc="https://youtube.com/playlist?list=PLfcYOdV5W3jCNdvrpBgk-OL3uaIhDUQfA&si=j2isE1i7TNSXEy3a"
       playlist_title="DEADPROGRAM Twitch streamings"
     />
-  </Grid>
-</Grid>
+  </div>
+</div>
+
+<div align="center" class="left_aligned_text">
+  <div align="right">
+    <YoutubePlaylistEmbed
+      playlistSrc="https://youtube.com/playlist?list=PLfcYOdV5W3jCNdvrpBgk-OL3uaIhDUQfA&si=j2isE1i7TNSXEy3a"
+      playlist_title="DEADPROGRAM Twitch streamings"
+    />
+  </div>
+  <div align="left">
+    <h2>TinyGo streamings</h2>
+    <p>
+      <br />I have also had the pleasure to collaborate with Ron Evans (AKA
+      <a href="https://github.com/deadprogram" title="@deadprogram"
+        >@deadprogram</a
+      >), Go guru, technologist for hire, influencer and overall amazing person!
+      In the following Youtube playlist where the Twitch streamings are
+      recorded, I was leveraging the Go implementation of OpenCV named
+      <b>GoCV</b> to interface an object detection model to detect... cows
+      (don't ask about that, we're a bit weird in Asturias 😅). <br /><br />
+      I have also learned a lot about Go, TinyGo and microdevices (check out the
+      <a
+        href="https://github.com/frisuelu/physical-LED-dashboard"
+        title="GitHub repo for LED dashboard">LED dashboard project</a
+      > I developed if you are interested!).
+    </p>
+  </div>
+</div>
 
 <style>
+  .landing_title {
+    padding-bottom: var(--size-fluid-5);
+  }
+
+  .section_heading_top {
+    padding-bottom: var(--size-fluid-3);
+  }
+
+  .video_grid {
+    padding-top: var(--size-fluid-5);
+    padding-bottom: var(--size-fluid-5);
+    border-top: 0.5px solid var(--border);
+  }
+
+  .left_aligned_text {
+    padding-top: var(--size-fluid-5);
+    padding-bottom: var(--size-fluid-5);
+    border-top: 0.5px solid var(--border);
+    column-gap: var(--size-fluid-2);
+    display: flex;
+  }
 </style>
