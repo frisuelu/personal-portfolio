@@ -1,3 +1,7 @@
+<script>
+  import { Github, LinkedinIcon, Mail } from "lucide-svelte";
+</script>
+
 <svelte:head>
   <title>Personal porfolio - Manuel Souto Juan</title>
   <meta charset="UTF-8" />
@@ -21,6 +25,18 @@
       <img src="src/lib/images/landing/me.jpg" alt="Manuel Souto Juan" />
     </div>
   </section>
+
+  <div class="icons">
+    <a href="https://www.linkedin.com/in/manuel-souto-juan/">
+      <LinkedinIcon />
+    </a>
+    <a href="https://www.github.com/frisuelu">
+      <Github />
+    </a>
+    <a href="mailto:manuelsoju@hotmail.com">
+      <Mail />
+    </a>
+  </div>
 
   <div class="prose">
     <p>
@@ -136,6 +152,16 @@
       margin-left: 0;
       margin-top: 20px;
     }
+  }
+
+  .icons {
+    display: flex;
+    gap: var(--size-7);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 
   .section-title {

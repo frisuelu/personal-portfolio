@@ -16,7 +16,7 @@
     <b>About me</b>
   </h1>
 </div>
-<div class="prose">
+<div class="prose" align="center">
   <p>
     <br />Hi! My name is Manuel, and I’m a Data Scientist based in Spain. I was
     born on November 8th, 1996 in northern Spain (in a little green place called
