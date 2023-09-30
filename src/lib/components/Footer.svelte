@@ -59,6 +59,27 @@
     text-decoration: none;
   }
 
+  .icons {
+    display: flex;
+    gap: var(--size-7);
+  }
+
+  /* Add hover display to links */
+  a:hover {
+    background-color: var(--stone-5);
+    box-shadow: var(--shadow-3);
+    border-radius: var(--radius-3);
+    color: var(--stone-9);
+  }
+
+  /* Avoid the hovering to affect the icons */
+  .icons a:hover {
+    background-color: inherit;
+    box-shadow: inherit;
+    border-radius: inherit;
+    color: inherit;
+  }
+
   @media (min-width: 768px) {
     nav {
       display: flex;
@@ -72,8 +93,4 @@
     }
   }
 
-  .icons {
-    display: flex;
-    gap: var(--size-7);
-  }
 </style>

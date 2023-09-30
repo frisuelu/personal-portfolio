@@ -43,6 +43,14 @@
     text-decoration: none;
   }
 
+  /* Add hover display to links */
+  a:hover {
+    background-color: var(--stone-5);
+    box-shadow: var(--shadow-3);
+    border-radius: var(--radius-3);
+    color: var(--stone-9);
+  }
+
   @media (min-width: 768px) {
     nav {
       display: flex;
