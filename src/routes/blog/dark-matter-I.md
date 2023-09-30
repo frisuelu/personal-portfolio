@@ -13,7 +13,7 @@ media: Posted on Medium
 
 ---
 
-![](https://cdn-images-1.medium.com/max/2560/1*M46lihvbDfpJl6ZGY6tgXg.jpeg)
+![Abstract image of dark matter](https://cdn-images-1.medium.com/max/2560/1*M46lihvbDfpJl6ZGY6tgXg.jpeg)
 
 Are you interested in learning more about particle physics? You might have heard terms like _neutrinos_, _quarks_, or _dark matter_ mentioned before and want to know more about them. However, the literature and articles involved mainly use terms and concepts that the reader is supposed to already know, which makes them inaccessible to anyone not in this field.
 
@@ -32,7 +32,7 @@ We’ll start with a short description of the [Standard Model](https://en.wikipe
 
 The SM postulates the existence of two kinds of particles: **fermions,** which compose all visible matter, and **baryons,** that mediate the fundamental interactions (ElectroMagnetism, Strong and Weak forces, and Gravity; integrating this last one is still one of the biggest mysteries of modern physics). According to this theory, every interaction between two particles is mediated via the exchange of a boson. Below you can see a simple diagram of these particles and their classifications. The main difference between these two types of particles is their spin: fermions have half-integer spins, while bosons have integer spins, and this is the main reason the physics around these particles are so different.
 
-[![](https://cdn-images-1.medium.com/max/800/0*L2x32zyaBusWKKfN)](https://www.quantumdiaries.org/2014/03/14/the-standard-model-a-beautiful-but-flawed-theory/)
+[![Standard model overview](https://cdn-images-1.medium.com/max/800/0*L2x32zyaBusWKKfN)](https://www.quantumdiaries.org/2014/03/14/the-standard-model-a-beautiful-but-flawed-theory/)
 
 Standard Model (SM) particle overview.
 
