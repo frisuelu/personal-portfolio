@@ -6,12 +6,14 @@
 </script>
 
 <div align="center" class="landing_title">
-  <h1>Data Science projects I have worked on</h1>
+  <h1>Some open-source projects I have worked on</h1>
   <p>
-    <br />In the following cards you can see some of the DS projects I have
-    worked on. I am a curious person by nature, always trying to learn and
-    attracted to new things. I believe learning is a never-ending wheel,
-    specially in the current tech and data landscape. <br />
+    <br />In the following cards you will see some of the things I have worked
+    on during my free time or have been open sourced. These are the code
+    endevours which are <i>cohesive</i> enough to be called a project and not a
+    brainfart.<br /><br /> I am a curious person by nature, always trying to
+    learn and attracted to new things. I believe learning is a never-ending
+    wheel, especially in the current tech and data landscape. <br />
     <br />The projects listed below have allowed me to gain a deeper
     understanding of some transversal technologies that I do not get to employ
     in my day-to-day job. These "pet projects" range from web app development
@@ -19,8 +21,8 @@
     to control a robot!
     <br />
     <br />
-    Another interesting project currently in the works is this exact website you
-    are visiting using Svelte and SvelteKit!
+    Oh, and also this exact website you are visiting, built on top of Svelte and
+    SvelteKit!
   </p>
 </div>
 
