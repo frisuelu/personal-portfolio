@@ -5,7 +5,7 @@
 </script>
 
 <div>
-  <img class="thumbnail" src="src/lib/images/{repo_name}.jpg" alt="Thumbnail" />
+  <img class="thumbnail" src="src/lib/images/repos/{repo_name}.jpg" alt="Thumbnail" />
   <div class="description">
     <h2>{repo_name}</h2>
     <p>{repo_description}</p>

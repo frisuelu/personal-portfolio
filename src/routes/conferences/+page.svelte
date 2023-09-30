@@ -8,17 +8,17 @@
   import Grid from "svelte-grid-responsive";
 
   let anbanImages = [
-    "src/lib/images/anban_conference.jpg",
-    "src/lib/images/anban_conference_2.jpg",
-    "src/lib/images/anban_conference_3.jpg",
+    "src/lib/images/conferences/anban_conference.jpg",
+    "src/lib/images/conferences/anban_conference_2.jpg",
+    "src/lib/images/conferences/anban_conference_3.jpg",
   ];
 
   let universityImages = [
-    "src/lib/images/university_1.jpg",
-    "src/lib/images/university_2.jpg",
-    "src/lib/images/university_3.jpg",
-    "src/lib/images/university_4.jpg",
-    "src/lib/images/university_5.jpg",
+    "src/lib/images/conferences/university_1.jpg",
+    "src/lib/images/conferences/university_2.jpg",
+    "src/lib/images/conferences/university_3.jpg",
+    "src/lib/images/conferences/university_4.jpg",
+    "src/lib/images/conferences/university_5.jpg",
   ];
 </script>
 
@@ -109,7 +109,9 @@
       <br />As a former alumni of the Faculty of Sciencies, I keep a strong
       relationship with the University up to this day. During these past years I
       have attended several events and chats with current students to discuss
-      the future of data, questions, and overall guidance in the sector.
+      the future of data, cloud services, projects I have worked on, and overall
+      guidance into what they can expect of the sector if they so choose to
+      pursue this path.
     </p>
   </div>
   <div class="image_carousel">
