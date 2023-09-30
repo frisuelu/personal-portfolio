@@ -11,6 +11,9 @@
     <!-- Navigation -->
     <ul class="links">
       <li>
+        <a href="/skillset">Skillset</a>
+      </li>
+      <li>
         <a href="/projects">Projects</a>
       </li>
       <li>

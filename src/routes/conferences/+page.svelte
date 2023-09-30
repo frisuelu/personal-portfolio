@@ -94,10 +94,13 @@
   <div align="left">
     <h2>ANBAN conference</h2>
     <p>
-      <br />ANBAN (Asociación nacional Big Data y Analytics) is a non-for-profit
-      association focused on promoting data related knowledge and activities. I
-      was invited as part of a group of proffesionals in the sector to discuss
-      how I use data in my day-to-day job to solve real-world problems.
+      <br /><a
+        href="https://www.linkedin.com/company/big-data-asociacion"
+        title="ANBAN LinkedIn profile">ANBAN</a
+      > (Asociación nacional Big Data y Analytics) is a non-for-profit association
+      focused on promoting data related knowledge and activities. I was invited as
+      part of a group of proffesionals in the sector to discuss how I use data in
+      my day-to-day job to solve real-world problems.
     </p>
   </div>
 </div>
