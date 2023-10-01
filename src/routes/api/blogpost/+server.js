@@ -1,4 +1,7 @@
 // API endpoint to retrieve dynamic blog post data sorted by date
+
+export const prerender = true;
+
 import { fetchMarkdownPosts } from "$lib/utils/index.js";
 import { json } from "@sveltejs/kit";
 

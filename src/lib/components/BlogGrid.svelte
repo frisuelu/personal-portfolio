@@ -1,4 +1,6 @@
 <script>
+  import { base } from "$app/paths";
+
   // Individual card for carousel class
   import BlogCard from "./BlogCard.svelte";
   // Responsive grid component
@@ -18,7 +20,7 @@
         date={post.meta.date}
         thumbnail_url={post.meta.thumbnail_url}
         thumbnail_alt={post.meta.thumbnail_alt}
-        article_url={post.path}
+        article_url={base + post.path}
         media={post.meta.media}
       />
     </Grid>

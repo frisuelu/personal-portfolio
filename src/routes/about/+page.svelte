@@ -1,3 +1,7 @@
+<script>
+  import { base } from "$app/paths";
+</script>
+
 <svelte:head>
   <title>About me - Manuel Souto Juan</title>
   <meta charset="UTF-8" />
@@ -100,7 +104,7 @@
     delved into embedded devices, IoT and microcontrollers; for example,
     interconnecting several devices using the MQTT protocol to deliver real-time
     sensor outputs to a physical LED dashboard for further analysis. Check all
-    of these and more in the <a href="/projects">projects</a> folder if you haven't
+    of these and more in the <a href="{base}/projects">projects</a> folder if you haven't
     yet!
   </p>
   <p>

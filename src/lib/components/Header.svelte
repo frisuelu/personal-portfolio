@@ -1,28 +1,29 @@
 <script>
+  import { base } from "$app/paths";
   import Toggle from "$lib/components/ThemeToggle.svelte";
 </script>
 
 <nav>
   <!-- Title -->
-  <a href="/" class="title">
+  <a href="{base}/" class="title">
     <b>Personal Portfolio</b>
   </a>
   <!-- Navigation -->
   <ul class="links">
     <li>
-      <a href="/skillset">Skillset</a>
+      <a href="{base}/skillset">Skillset</a>
     </li>
     <li>
-      <a href="/projects">Projects</a>
+      <a href="{base}/projects">Projects</a>
     </li>
     <li>
-      <a href="/blog">Blog</a>
+      <a href="{base}/blog">Blog</a>
     </li>
     <li>
-      <a href="/conferences">Conferences</a>
+      <a href="{base}/conferences">Conferences</a>
     </li>
     <li>
-      <a href="/about">About</a>
+      <a href="{base}/about">About</a>
     </li>
   </ul>
   <!-- Theme toggle -->

@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   import { Github, LinkedinIcon, Mail } from "lucide-svelte";
 </script>
 
@@ -65,7 +66,7 @@
       <div class="section-description">
         Check out my experience and tools I am proficient at
       </div>
-      <a href="/skillset" class="section-button">View Skillset</a>
+      <a href="{base}/skillset" class="section-button">View Skillset</a>
     </section>
 
     <section id="projects">
@@ -73,7 +74,7 @@
       <div class="section-description">
         Open-sourced projects developed on my spare time
       </div>
-      <a href="/projects" class="section-button">View Projects</a>
+      <a href="{base}/projects" class="section-button">View Projects</a>
     </section>
 
     <section id="blog">
@@ -81,7 +82,7 @@
       <div class="section-description">
         Medium blog posts on technical stuff
       </div>
-      <a href="/blog" class="section-button">Read Blog</a>
+      <a href="{base}/blog" class="section-button">Read Blog</a>
     </section>
 
     <section id="conferences">
@@ -89,7 +90,7 @@
       <div class="section-description">
         Events, talks and conferences I have participated in
       </div>
-      <a href="/conferences" class="section-button">View Conferences</a>
+      <a href="{base}/conferences" class="section-button">View Conferences</a>
     </section>
 
     <section id="about">
@@ -97,7 +98,7 @@
       <div class="section-description">
         Learn more about who I am and what I do.
       </div>
-      <a href="/about" class="section-button">About Me</a>
+      <a href="{base}/about" class="section-button">About Me</a>
     </section>
   </div>
 </div>
