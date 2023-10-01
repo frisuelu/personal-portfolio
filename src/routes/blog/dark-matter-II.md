@@ -11,7 +11,7 @@ media: Posted on Medium
 
 ### The data analysis process at CERN in order to detect Dark Matter
 
-![](https://cdn-images-1.medium.com/max/2560/1*M46lihvbDfpJl6ZGY6tgXg.jpeg)
+![Abstract dark matter](https://cdn-images-1.medium.com/max/2560/1*M46lihvbDfpJl6ZGY6tgXg.jpeg)
 
 ---
 
@@ -21,7 +21,7 @@ In this second part of the previous introductory article, we’ll tackle the mor
 
 We‘ve been talking about particles and detectors, but an important question remains unanswered: what exactly **is** colliding? The answer is _protons_, or more exactly, _bunches_ of protons. Accelerated through the LHC by multiple solenoid setups, these bunches come across one another in the detectors, and a collision happens. This proton _beam_ has no perpendicular component, meaning it only moves in a circular manner through the LHC, due to the solenoids’ magnetic field; this is done on purpose since studying the collision in the **perpendicular plane** means the conservation of energy applies and all momentum must be null, meaning if there’s an imbalance an _invisible particle_ has been produced. A cross-section of the detector can be seen below, with its components ([here](https://www.researchgate.net/figure/Cross-sectional-view-of-the-CMS-detector-11-The-HCAL-contains-and-measures-the_fig3_41217449)). Some examples of these particles are neutrinos, but also possible dark matter or other theoretical particles. So now, what’s the next step?
 
-[![](https://cdn-images-1.medium.com/max/800/0*BvazztvmO3y0gdm4)](https://cds.cern.ch/record/2205172/files/CMS%20Slice.gif)
+[![Cross-section of the CMS detector at LHC with its 5 distinct parts](https://cdn-images-1.medium.com/max/800/0*BvazztvmO3y0gdm4)](https://cds.cern.ch/record/2205172/files/CMS%20Slice.gif)
 
 Cross-section of the CMS detector at LHC with its 5 distinct parts (from inside to outside): tracker, ECAL, HCAL, solenoid, and muon chambers.
 
@@ -35,11 +35,11 @@ Okay, and now that we know a lot of collisions occur at almost the same time, ho
 
 > The first phase filters down a lot of data using detector hardware to register adequate data in a really short time (almost a millionth of a second!), taking into account information from the muon chambers and calorimeters specifically, and is known as the level-1 trigger or **L1**. This phase can cut down the total recorded data from 40 MHz up to just 100 kHz, offering the first cut towards useful data. Next, a second set of commercial processors and parallel machines takes that data and further refines it based on precision parameters, operating offline; this is called the high-level trigger or **HLT**. Then, it creates a backup of the data and sends it to the associated research institutions for analysis. Even at this last stage, recorded data is still around the **1 GB/s** mark, showing just how much the trigger and further resources are needed.
 
-[![](https://cdn-images-1.medium.com/max/800/0*GeADwnb_NnDrsrE7)](https://www.researchgate.net/figure/The-CMS-Level-1-Trigger_fig1_228610279)
+[![CMS Level-1 trigger overview.](https://cdn-images-1.medium.com/max/800/0*GeADwnb_NnDrsrE7)](https://www.researchgate.net/figure/The-CMS-Level-1-Trigger_fig1_228610279)
 
 CMS Level-1 trigger overview.
 
-[![](https://cdn-images-1.medium.com/max/800/0*ptm1H_kgZ0q-OIYE)](https://www.researchgate.net/figure/Simplified-schematic-view-of-the-CMS-Data-Acquisition-System-architecture-Shown-are-the_fig1_260982484)
+[![Schematic view of the CMS Data Acquisition System.](https://cdn-images-1.medium.com/max/800/0*ptm1H_kgZ0q-OIYE)](https://www.researchgate.net/figure/Simplified-schematic-view-of-the-CMS-Data-Acquisition-System-architecture-Shown-are-the_fig1_260982484)
 
 Schematic view of the CMS Data Acquisition System.
 
@@ -51,7 +51,7 @@ With this algorithm, photons and leptons (especially muons) are easily tagged wi
 
 In a collision between two protons, or more accurately between proton quarks, the immediate thought is that only the constituent quarks can interact, so only _up_ and _down_ quarks would interact. However, a measure of the mass of the proton and these quarks shows that most of the mass doesn’t come from its constituents but from _internal bounding energy_. This means that this excess energy, if the collider energy is enough, can produce other quarks such as quarks _bottom_ and _top_, both several times the mass of quarks _u_ and _d_, and these quarks may be the ones that interact at the collision point; an example of a collision may be seen in the image below.
 
-[![](https://cdn-images-1.medium.com/max/800/0*H7ZzApqxug79G4Jr)](https://atlas.physicsmasterclasses.org/zpath_files/img/proton-proton_en.jpg)
+[![Schematic interaction of two colliding protons and their partons.](https://cdn-images-1.medium.com/max/800/0*H7ZzApqxug79G4Jr)](https://atlas.physicsmasterclasses.org/zpath_files/img/proton-proton_en.jpg)
 
 Schematic interaction of two colliding protons and their partons.
 

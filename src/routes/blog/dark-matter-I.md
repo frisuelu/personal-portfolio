@@ -13,7 +13,7 @@ media: Posted on Medium
 
 ---
 
-![Abstract image of dark matter](https://cdn-images-1.medium.com/max/2560/1*M46lihvbDfpJl6ZGY6tgXg.jpeg)
+![Abstract dark matter](https://cdn-images-1.medium.com/max/2560/1*M46lihvbDfpJl6ZGY6tgXg.jpeg)
 
 Are you interested in learning more about particle physics? You might have heard terms like _neutrinos_, _quarks_, or _dark matter_ mentioned before and want to know more about them. However, the literature and articles involved mainly use terms and concepts that the reader is supposed to already know, which makes them inaccessible to anyone not in this field.
 

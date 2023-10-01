@@ -11,7 +11,7 @@ media: Posted on Medium
 
 ### Novel applications of this powerful architecture set the bar for future AI advances
 
-![](https://cdn-images-1.medium.com/max/1200/1*wZOvEaKZ5CUCgyFlvYfh3w.jpeg)
+![Abstract wordcloud](https://cdn-images-1.medium.com/max/1200/1*wZOvEaKZ5CUCgyFlvYfh3w.jpeg)
 
 ---
 
