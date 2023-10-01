@@ -22,7 +22,7 @@
       <h3>Lead Data Scientist based in Spain</h3>
     </div>
     <div class="image">
-      <img src="src/lib/images/landing/me.jpg" alt="Manuel Souto Juan" />
+      <img src="images/landing/me.jpg" alt="Manuel Souto Juan" />
     </div>
   </section>
 

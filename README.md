@@ -9,6 +9,7 @@ as styling using CSS. Showcase projects, experience, professional trajectory, bl
 - [ ] Correct theme display for tools (dark/light modes)
 - [ ] New route for past projects
 - [ ] Images in "About" section
+- [ ] Automate deployment on push to main
 
 ## REFERENCES
 

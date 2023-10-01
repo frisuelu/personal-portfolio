@@ -18,14 +18,61 @@
 
   // Tool logos in static folder (note this uses Vite, which returns a dictionary
   // with string keys and function values)
-  const tools = import.meta.glob("/src/lib/images/tools/*.{svg,png,jpg}", {
-    eager: true,
-  });
-  let tool_logos = [];
+  // TODO: fix why the static/ path is not working
+  // const tools = import.meta.glob("/images/tools/*.{svg,png,jpg}");
+  // let tool_logos = [];
 
-  for (const modulePath in tools) {
-    tool_logos.push(tools[modulePath].default);
-  }
+  // for (const modulePath in tools) {
+  //   tool_logos.push(tools[modulePath].default);
+  // }
+
+  // Workaround, but obviously the glob option is best...
+  let tool_logos = [
+    "images/tools/apache-superset.png",
+    "images/tools/arduino.svg",
+    "images/tools/azure-Blob-Block.svg",
+    "images/tools/Azure-Container-Instances.svg",
+    "images/tools/Azure-Container-Registries.svg",
+    "images/tools/bash.svg",
+    "images/tools/big-query.png",
+    "images/tools/cloud-functions.png",
+    "images/tools/CSS.png",
+    "images/tools/dask.png",
+    "images/tools/databricks.jpg",
+    "images/tools/docker.svg",
+    "images/tools/flask.png",
+    "images/tools/github.svg",
+    "images/tools/gitlab.svg",
+    "images/tools/git.svg",
+    "images/tools/go-lang.svg",
+    "images/tools/google-cloud-storage.png",
+    "images/tools/HTML.png",
+    "images/tools/hubspot.png",
+    "images/tools/HuggingFace.svg",
+    "images/tools/JavaScript.svg",
+    "images/tools/looker-studio.svg",
+    "images/tools/matlab.jpg",
+    "images/tools/metabase.png",
+    "images/tools/mySQL.png",
+    "images/tools/numpy.svg",
+    "images/tools/NVIDIA-Merlin.jpg",
+    "images/tools/NVIDIA-RAPIDS.png",
+    "images/tools/NVIDIA-triton-inference-server.png",
+    "images/tools/octave.png",
+    "images/tools/openCV.svg",
+    "images/tools/pandas.svg",
+    "images/tools/postgreSQL.svg",
+    "images/tools/python.svg",
+    "images/tools/pytorch-lightning.png",
+    "images/tools/PyTorch.svg",
+    "images/tools/r.png",
+    "images/tools/SPSS.jpg",
+    "images/tools/svelte.svg",
+    "images/tools/tensorflow.svg",
+    "images/tools/TinyGo.png",
+    "images/tools/vim.png",
+    "images/tools/visual-studio.svg",
+  ];
 </script>
 
 <svelte:head>

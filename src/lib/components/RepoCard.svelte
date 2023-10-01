@@ -10,7 +10,7 @@
   <div>
     <img
       class="thumbnail"
-      src="src/lib/images/repos/{repo_name}.jpg"
+      src="images/repos/{repo_name}.jpg"
       alt="Thumbnail"
     />
   </div>

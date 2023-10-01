@@ -43,7 +43,7 @@
   <ul>
     <li>
       <a
-        href="src/lib/theses/TFGManuelSouto-2018_2019-Physics.pdf"
+        href={"theses/TFGManuelSouto-2018_2019-Physics.pdf"}
         download="TFGManuelSouto-2018_2019-Physics.pdf"
         >Dark matter search associated with top quarks in the CMS experiment at
         LHC (CERN). <i>University of Oviedo, 2018-2019</i></a
@@ -51,7 +51,7 @@
     </li>
     <li>
       <a
-        href="src/lib/theses/TFGManuelSouto-2018_2019-Maths.pdf"
+        href={"theses/TFGManuelSouto-2018_2019-Maths.pdf"}
         download="TFGManuelSouto-2018_2019-Maths.pdf"
         >Fuzzy characterization of the distribution of a random variable.
         Applications. <i>University of Oviedo, 2018-2019</i></a
@@ -68,7 +68,7 @@
   <ul>
     <li>
       <a
-        href="src/lib/theses/TFMManuelSouto-2019_2020-Stats.pdf"
+        href={"theses/TFMManuelSouto-2019_2020-Stats.pdf"}
         download="TFMManuelSouto-2019_2020-Stats.pdf"
         >Text mining with open-source software: DtmVic & IRaMuTeQ. Comparative
         study applied to climate change.

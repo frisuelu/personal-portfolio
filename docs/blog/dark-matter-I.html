@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="https://fav.farm/🧑🏻‍💻" />
+    
+		<link href="../_app/immutable/assets/0.df38d767.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/5.7135dbff.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.cf2a3c06.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.012e952f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.63e7a915.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.15cf1bc6.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.2a469fae.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.898d9df3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/github.c372c089.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/mail.c27d4e4a.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/5.242dc8f1.js"><title>Quantum Physics I — the CERN data workflow in new Physics discoveries</title><!-- HEAD_svelte-1opz4md_START --><meta charset="UTF-8"><meta name="description" content="Medium: $Quantum Physics I — the CERN data workflow in new Physics discoveries"><meta name="keywords" content="Data Science, AI, Machine Learning, Technology"><meta name="author" content="Manuel Souto Juan"><meta property="og:type" content="article"><meta property="og:title" content="Quantum Physics I — the CERN data workflow in new Physics discoveries"><!-- HEAD_svelte-1opz4md_END -->
+    <!-- Check dark or light mode -->
+    <script type="module">
+      const theme = localStorage.getItem("color-scheme");
+
+      theme
+        ? document.documentElement.setAttribute("color-scheme", theme)
+        : localStorage.setItem("color-scheme", "dark");
+    </script>
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">
+
+
+<div class="app svelte-15wrlg9">
+    <nav class="svelte-gy9bn7">
+  <a href="/" class="title svelte-gy9bn7"><b>Personal Portfolio</b></a>
+  
+  <ul class="links svelte-gy9bn7"><li><a href="/skillset" class="svelte-gy9bn7">Skillset</a></li>
+    <li><a href="/projects" class="svelte-gy9bn7">Projects</a></li>
+    <li><a href="/blog" class="svelte-gy9bn7">Blog</a></li>
+    <li><a href="/conferences" class="svelte-gy9bn7">Conferences</a></li>
+    <li><a href="/about" class="svelte-gy9bn7">About</a></li></ul>
+  
+  <button aria-label="Toggle theme" class="svelte-stng2m"><div class="svelte-stng2m"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-moon "><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+      <span>Dark</span></div>
+</button>
+</nav>
+    <main class="svelte-15wrlg9"><link href="https://github.com/PrismJS/prism-themes/themes/prism-dracula.css" rel="stylesheet">
+
+
+
+
+<article class="svelte-1pctfqm"><div class="prose"><h1>Quantum Physics I — the CERN data workflow in new Physics discoveries.</h1>
+<h3>The data analysis process at CERN in order to detect Dark Matter</h3>
+<hr>
+<p><img src="https://cdn-images-1.medium.com/max/2560/1*M46lihvbDfpJl6ZGY6tgXg.jpeg" alt="Abstract dark matter"></p>
+<p>Are you interested in learning more about particle physics? You might have heard terms like <em>neutrinos</em>, <em>quarks</em>, or <em>dark matter</em> mentioned before and want to know more about them. However, the literature and articles involved mainly use terms and concepts that the reader is supposed to already know, which makes them inaccessible to anyone not in this field.</p>
+<p>In this article, I’ll provide an easy-to-understand explanation about everything you’d need to know to understand the main points of these articles: the main results, how they’ve been obtained, and the methodology behind their collection. It will be divided into two parts:</p>
+<ul><li>The first one will focus on the basic concepts regarding this subject: a basic Standard Model (SM) overview and a description of dark matter and the Compact Muon Solenoid (CMS) detector.</li>
+<li>The second one will focus on the details of data collection and analysis at CERN; this one is where the Data Science component will be.</li></ul>
+<p>My experience with this subject comes from my undergraduate project in Physics dedicated to a dark matter model verification with LHC <em>Run 2</em> data, where my love for experimental particle physics was consolidated. I hope this article will help you understand the basics of these studies at CERN and get you started in further publications on this topic.</p>
+<hr>
+<h2>Standard Model Basics</h2>
+<p>We’ll start with a short description of the <a href="https://en.wikipedia.org/wiki/Standard_Model#:~:text=The%20Standard%20Model%20of%20particle%20physics%20is%20the%20theory%20describing,classifying%20all%20known%20elementary%20particles." rel="nofollow">Standard Model</a> (SM), the theory that describes the structure of matter and its interactions. It’s worth noting that the terminology <em>model</em> comes from the 1970s, when this theory didn’t have enough experimental evidence to support it as such, while nowadays it does.</p>
+<p>The SM postulates the existence of two kinds of particles: <strong>fermions,</strong> which compose all visible matter, and <strong>baryons,</strong> that mediate the fundamental interactions (ElectroMagnetism, Strong and Weak forces, and Gravity; integrating this last one is still one of the biggest mysteries of modern physics). According to this theory, every interaction between two particles is mediated via the exchange of a boson. Below you can see a simple diagram of these particles and their classifications. The main difference between these two types of particles is their spin: fermions have half-integer spins, while bosons have integer spins, and this is the main reason the physics around these particles are so different.</p>
+<p><a href="https://www.quantumdiaries.org/2014/03/14/the-standard-model-a-beautiful-but-flawed-theory/" rel="nofollow"><img src="https://cdn-images-1.medium.com/max/800/0*L2x32zyaBusWKKfN" alt="Standard model overview"></a></p>
+<p>Standard Model (SM) particle overview.</p>
+<p>Fermions are further divided into two families of 6 particles each: <strong>leptons</strong> (electron, muon, tau, and their respective neutrinos; these are particles with little mass and no electric charge that appear in the decay of their associated lepton) and <strong>quarks</strong>; the main difference between these is that quarks are affected by the Strong force, while leptons aren’t, and the reason for this comes from the charges of these particles. Another kind of particle not shown in the previous graphic is the <strong>antiparticle</strong>, which is the same particle, but with opposite electric charge; you may know this by its much cooler name of <strong>antimatter</strong>.</p>
+<p>Furthermore, quarks cannot be found as independent particles and must form bigger particles called <strong>hadrons</strong>; the most famous ones being the proton and neutron, composed of quark configurations <em>uud</em> and <em>udd</em> respectively; this phenomenon of <em>hadronization</em> of quarks is called <a href="https://en.wikipedia.org/wiki/Color_confinement" rel="nofollow"><strong>confinement</strong></a> and is a really interesting topic for those interested.</p>
+<p>Since the fundamental interactions are mediated by bosons, these must <em>couple</em> with the corresponding fermions, but that is only possible if they share the same type of charge. To further explain this, let’s examine each of these forces:</p>
+<ul><li>ElectroMagnetism: this force is mediated by the <strong>photon</strong> (γ) between particles that share electric charge; this includes all quarks, all leptons except neutrinos, and both bosons W⁺ and W⁻.</li>
+<li>Weak force: this is the main force behind the <em>decay</em> of some particles into others, like radioactivity, and is mediated by the bosons <strong>W⁺</strong>, <strong>W⁻</strong>, and the boson <strong>Z⁰</strong> (the superscript indicates their electric charge). The charge needed for this interaction is the weak charge, and all fermions have it.</li>
+<li>Strong force: this is the force that binds the atomic nucleus together, and is mediated by the <strong>gluon</strong> (<em>g</em>), which has no electric or weak charges. However, a big difference with the previous interactions is that the gluon possesses <strong>colour</strong> (this is the name given to the strong charge). Its name comes from the fact that this interaction is several times stronger than electromagnetism, thus showing how the nucleus can exist even when it’s made out of protons that should be repelling one another. Only quarks have colour, and as such are the only particles affected by the strong force.</li></ul>
+<p>The last piece of the puzzle in the SM is the <strong>Higgs boson</strong>, which couples to every particle (including itself!) except neutrinos, and is responsible for the mass of the particle.</p>
+<p>This may seem like a lot of information at once, but don’t worry, the goal of this overview of the SM is to give some context and familiarise you with the forces and particles that rule our universe, you can always reread it later.</p>
+<h2>What is Dark Matter?</h2>
+<p>We’ve talked about dark matter in this article before, but we haven’t really given any sort of description of it; we’ll tackle this briefly in this section, discussing the evidence that supports its existence as well.</p>
+<p>Several sources, even going back as far as the 1930s, show that astronomical calculations involving galaxy masses and rotational speeds don’t match with the expected results from the observable masses they have. One example of this is the Cosmic Microwave Background or CMB, where we learned that baryonic matter (meaning stars, planets, humans, etc.) only makes up ~5% of the total universe mass; here is some documentation on <a href="https://www.quantamagazine.org/how-the-cosmic-microwave-background-reveals-the-universes-contents-20200128/" rel="nofollow">CMB</a>, <a href="https://hubblesite.org/contents/articles/gravitational-lensing" rel="nofollow">gravitational lensing</a> and the <a href="https://science.nasa.gov/astrophysics/focus-areas/what-is-dark-energy" rel="nofollow">Hubble Law</a> that expands on this matter.</p>
+<p>Is there a possibility that this is actually some sort of known particle? Some possible candidates could be :</p>
+<ul><li>Antimatter: this is impossible since the matter-antimatter annihilation process shows very characteristic 𝜸-rays, and these are not seen.</li>
+<li>Black holes: again, it can’t be since black holes curve light around them, and dark matter doesn’t affect photons.</li></ul>
+<p>So, now we know most of the universe is made out of some sort of matter/energy that doesn’t interact electromagnetically, which makes it pretty much invisible to most detectors on Earth, but does interact gravitationally; if it didn’t, then we wouldn’t even know it existed. Since this is the case, the naming convention for this new type of matter is <strong>dark matter</strong>, the <em>dark</em> alluding to the fact that it doesn’t interact normally with baryonic matter.</p>
+<p>As you can guess, knowing that around 90% of the universe is made out of something we don’t know makes this one of the main research topics of modern-day physics, including searches in particle accelerators like LHC.</p>
+<h2>The CMS detector of the LHC</h2>
+<p>The LHC is the biggest, most powerful particle collider in the world, and provides the best opportunity to discover new particles, like dark matter. In this article, we’ll focus on CMS (<em>Compact Muon Solenoid</em>), but the data collection and general workflow apply to the other three main detectors: ATLAS, ALICE, and LHCb.</p>
+<p>Its name comes from the muon chambers that, combined with the solenoid, offer the best muon detection resolution available today. There are several components in CMS that can detect all traces of different particles leaving the collision point; if you want a more detailed explanation take a look at <a href="https://arxiv.org/pdf/1306.6905.pdf" rel="nofollow">this article</a>. There are lots of components, as you can see, but the important thing you have to remember is that their purpose is to analyse the different tracks that different particles leave: electric charge, movement traces, energy, etc.</p>
+<hr>
+<p>With all of these concepts introduced, we’re ready to dive deeper into the specifics of data collection at CERN in our second part!</p></div>
+</article></main>
+    <footer class="svelte-i1r9nm"><nav class="svelte-i1r9nm">
+    <a href="/" class="title svelte-i1r9nm"><b>Personal Portfolio</b></a>
+    
+    <ul class="links svelte-i1r9nm"><li><a href="/skillset" class="svelte-i1r9nm">Skillset</a></li>
+      <li><a href="/projects" class="svelte-i1r9nm">Projects</a></li>
+      <li><a href="/blog" class="svelte-i1r9nm">Blog</a></li>
+      <li><a href="/conferences" class="svelte-i1r9nm">Conferences</a></li>
+      <li><a href="/about" class="svelte-i1r9nm">About</a></li></ul>
+    <div class="icons svelte-i1r9nm"><a href="https://www.linkedin.com/in/manuel-souto-juan/" class="svelte-i1r9nm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-linkedin "><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+      <a href="https://www.github.com/frisuelu" class="svelte-i1r9nm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-github "><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a>
+      <a href="mailto:manuelsoju@hotmail.com" class="svelte-i1r9nm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-mail "><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a></div></nav>
+</footer>
+</div>
+
+
+			
+			<script>
+				{
+					__sveltekit_1egnwnk = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.cf2a3c06.js"),
+						import("../_app/immutable/entry/app.2a469fae.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 5],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

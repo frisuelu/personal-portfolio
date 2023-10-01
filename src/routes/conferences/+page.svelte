@@ -8,17 +8,17 @@
   import Grid from "svelte-grid-responsive";
 
   let anbanImages = [
-    "src/lib/images/conferences/anban_conference.jpg",
-    "src/lib/images/conferences/anban_conference_2.jpg",
-    "src/lib/images/conferences/anban_conference_3.jpg",
+    "images/conferences/anban_conference.jpg",
+    "images/conferences/anban_conference_2.jpg",
+    "images/conferences/anban_conference_3.jpg",
   ];
 
   let universityImages = [
-    "src/lib/images/conferences/university_1.jpg",
-    "src/lib/images/conferences/university_2.jpg",
-    "src/lib/images/conferences/university_3.jpg",
-    "src/lib/images/conferences/university_4.jpg",
-    "src/lib/images/conferences/university_5.jpg",
+    "images/conferences/university_1.jpg",
+    "images/conferences/university_2.jpg",
+    "images/conferences/university_3.jpg",
+    "images/conferences/university_4.jpg",
+    "images/conferences/university_5.jpg",
   ];
 </script>
 
