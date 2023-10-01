@@ -89,7 +89,11 @@
 
 <div align="center" class="half_text">
   <div class="image_carousel">
-    <ImageCarousel images={anbanImages} />
+    <ImageCarousel
+      images={anbanImages}
+      particlesShown={2}
+      particlesScrolled={1}
+    />
   </div>
   <div align="left">
     <h2>ANBAN conference</h2>
@@ -118,7 +122,11 @@
     </p>
   </div>
   <div class="image_carousel">
-    <ImageCarousel images={universityImages} />
+    <ImageCarousel
+      images={universityImages}
+      particlesShown={2}
+      particlesScrolled={1}
+    />
   </div>
 </div>
 
