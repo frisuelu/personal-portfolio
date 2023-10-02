@@ -6,7 +6,15 @@ import { mdsvex } from "mdsvex";
 const config = {
   kit: {
     adapter: adapter(),
-    prerender: { handleHttpError: "warn" },
+    prerender: {
+      handleHttpError: "warn",
+      // Add entries for the endpoints so they are rendered on GitHub Pages
+      entries: [
+        "*",
+        "/api/blogpost",
+        "/api/github-repos",
+      ],
+    },
     paths: {
       base: process.env.NODE_ENV === "production" ? "/personal-portfolio" : "",
     },

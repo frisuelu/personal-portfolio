@@ -1,14 +1,13 @@
-// Prefetch the available posts using the API endpoint
+/** @type {import('./$types').PageLoad} */
 export const load = async ({ fetch }) => {
   try {
-    const response = await fetch(`/api/blogpost`);
+    const response = await fetch(`/personal-portfolio/api/blogpost`);
     const posts = await response.json();
 
     return {
       posts,
     };
-  } catch (e) {
-    console.error(`Error loading blog post endpoint /: ${error}`);
-    return null; // Return an empty array in case of an error
+  } catch (error) {
+    console.error(`Error fetching blog post API /: ${error}`);
   }
 };
