@@ -4,7 +4,7 @@ export const prerender = true;
 
 import { json } from "@sveltejs/kit";
 
-export const GET = async () => {
+export const GET = async ({ fetch }) => {
   const username = "frisuelu";
 
   try {
@@ -19,10 +19,9 @@ export const GET = async () => {
     const repositories = await response.json();
 
     return json(repositories);
-
   } catch (error) {
     // Handle any errors here
-    console.error(error);
+    console.error(`Error loading GitHub repositories /: ${error}`);
     return null; // Return an empty array in case of an error
   }
 };
