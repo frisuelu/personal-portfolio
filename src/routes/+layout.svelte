@@ -15,13 +15,13 @@
 <div class="app">
   {#key data.currentRoute}
     <!-- Hide header + footer on landing page -->
-    {#if data.currentRoute !== "/"}
+    {#if data.currentRoute !== "/personal-portfolio/"}
       <div class="Header-Footer"><Header /></div>
     {/if}
     <main in:fade={{ duration: 800, delay: 150 }} out:fade={{ duration: 500 }}>
       <slot />
     </main>
-    {#if data.currentRoute !== "/"}
+    {#if data.currentRoute !== "/personal-portfolio/"}
       <div class="Header-Footer"><Footer /></div>
     {/if}
   {/key}
