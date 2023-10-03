@@ -9,7 +9,10 @@
 
 <div class="box">
   {#if browser}
-    <Carousel class="box">
+    <Carousel
+      autoplay
+      duration={1500}
+    >
       {#each repositories as repo}
         <RepoCard
           repo_name={repo.name}
@@ -23,6 +26,16 @@
 
 <style>
   .box {
-    padding: var(--size-fluid-5);
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--size-fluid-2);
+    width: 60%;
+  }
+
+  @media (max-width: 768px) {
+    .box {
+      padding: var(--size-1);
+      width: 85%;
+    }
   }
 </style>

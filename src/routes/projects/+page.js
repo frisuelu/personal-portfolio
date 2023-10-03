@@ -2,6 +2,7 @@
 export const load = async ({ fetch }) => {
   try {
     const response = await fetch(`/personal-portfolio/api/github-repos`);
+    //const response = await fetch(`/api/github-repos`);
     const repos = await response.json();
 
     return {
