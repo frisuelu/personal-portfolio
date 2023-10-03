@@ -39,6 +39,7 @@
       </a>
     </div>
   </nav>
+  <p><small>Website created with Svelte and SvelteKit.</small></p>
 </footer>
 
 <style>

@@ -60,8 +60,8 @@
 <!-- https://media.licdn.com/dms/image/D4D22AQGRm2KFmJiPWw/feedshare-shrink_1280/0/1680681504991?e=1698883200&v=beta&t=hG4qSH5Vo0l88rfCTYCHhxrYSwlarKy64_Ewn0-UmEI -->
 <!-- https://media.licdn.com/dms/image/C4E22AQGA3tgYWpvNZQ/feedshare-shrink_800/0/1665670942087?e=1698883200&v=beta&t=XMvn2A57Koj1W6l8HZ-UqYvsjxGAjduuMKrabWaYwHU -->
 
-<div class="video_grid" align="center">
-  <div class="section_heading_top">
+<div class="centered_grid" align="center">
+  <div class="prose">
     <h2>DATAfórum 2023</h2>
     <p>
       <br />I had the pleasure of attending the DataForum event organised by the
@@ -71,20 +71,22 @@
       time...
     </p>
   </div>
-  <Grid container gutter={10} columns={2}>
-    <Grid>
-      <VimeoEmbed
-        src="https://vimeo.com/836601829"
-        video_title="DataForum 2023 - short version"
-      />
+  <div class="video_grid">
+    <Grid container gutter={40} columns={2}>
+      <Grid xs={2} lg={1}>
+        <VimeoEmbed
+          src="https://vimeo.com/836601829"
+          video_title="DataForum 2023 - short version"
+        />
+      </Grid>
+      <Grid xs={2} lg={1}>
+        <YoutubeEmbed
+          src="https://www.youtube.com/watch?v=CWaalYJR8qI&t=10486s"
+          video_title="DataForum conference June 2023"
+        />
+      </Grid>
     </Grid>
-    <Grid>
-      <YoutubeEmbed
-        src="https://www.youtube.com/watch?v=CWaalYJR8qI&t=10486s"
-        video_title="DataForum conference June 2023"
-      />
-    </Grid>
-  </Grid>
+  </div>
 </div>
 
 <div align="center" class="half_text">
@@ -95,7 +97,7 @@
       particlesScrolled={1}
     />
   </div>
-  <div align="left">
+  <div align="left" class="prose">
     <h2>ANBAN conference</h2>
     <p>
       <br /><a
@@ -110,7 +112,7 @@
 </div>
 
 <div align="center" class="half_text">
-  <div align="left">
+  <div align="left" class="prose">
     <h2>Collaborations with University of Oviedo</h2>
     <p>
       <br />As a former alumni of the Faculty of Sciencies, I keep a strong
@@ -131,7 +133,7 @@
 </div>
 
 <div align="center" class="half_text">
-  <div align="left">
+  <div align="left" class="prose">
     <h2>TinyGo streamings</h2>
     <p>
       <br />I have also had the pleasure to collaborate with Ron Evans (AKA
@@ -149,27 +151,36 @@
       > I developed if you are interested!).
     </p>
   </div>
-  <div>
-    <YoutubePlaylistEmbed
-      playlistSrc="https://youtube.com/playlist?list=PLfcYOdV5W3jCNdvrpBgk-OL3uaIhDUQfA&si=j2isE1i7TNSXEy3a"
-      playlist_title="DEADPROGRAM Twitch streamings"
-    />
+  <div class="individual_video">
+    <Grid container>
+      <YoutubePlaylistEmbed
+        playlistSrc="https://youtube.com/playlist?list=PLfcYOdV5W3jCNdvrpBgk-OL3uaIhDUQfA&si=j2isE1i7TNSXEy3a"
+        playlist_title="DEADPROGRAM Twitch streamings"
+      />
+    </Grid>
   </div>
 </div>
 
 <style>
   .landing_title {
-    padding-bottom: var(--size-fluid-5);
+    padding-bottom: var(--size-fluid-3);
   }
 
-  .section_heading_top {
-    padding-bottom: var(--size-fluid-3);
+  .centered_grid {
+    padding-top: var(--size-fluid-3);
+    padding-bottom: var(--size-fluid-5);
+    border-top: 0.5px solid var(--border);
   }
 
   .video_grid {
     padding-top: var(--size-fluid-5);
-    padding-bottom: var(--size-fluid-5);
-    border-top: 0.5px solid var(--border);
+  }
+
+  @media (min-width: 768px) {
+    .video_grid {
+      flex-direction: row; /* Side by side on larger screens */
+      column-gap: var(--size-fluid-3);
+    }
   }
 
   .half_text {
@@ -197,10 +208,14 @@
   }
 
   .image_carousel {
-    /* Add styles for your carousel, ensure it is responsive */
-    /* Example styles for responsive carousel */
     align-items: center;
     width: 60%; /* Adjust width as needed */
+    max-width: 100%; /* Ensures the carousel doesn't exceed its parent container */
+  }
+
+  .individual_video {
+    align-items: center;
+    width: 80%; /* Adjust width as needed */
     max-width: 100%; /* Ensures the carousel doesn't exceed its parent container */
   }
 </style>

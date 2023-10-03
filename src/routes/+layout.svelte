@@ -16,13 +16,13 @@
   {#key data.currentRoute}
     <!-- Hide header + footer on landing page -->
     {#if data.currentRoute !== "/"}
-      <Header />
+      <div class="Header-Footer"><Header /></div>
     {/if}
-    <main in:fade={{ duration: 500, delay: 150 }} out:fade={{ duration: 300 }}>
+    <main in:fade={{ duration: 800, delay: 150 }} out:fade={{ duration: 500 }}>
       <slot />
     </main>
     {#if data.currentRoute !== "/"}
-      <Footer />
+      <div class="Header-Footer"><Footer /></div>
     {/if}
   {/key}
 </div>
@@ -35,7 +35,7 @@
   }
 
   main {
-    padding-block: var(--size-8);
+    padding-block: var(--size-10);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -50,6 +50,9 @@
     }
     .app {
       padding-inline: 0;
+    }
+    .Header-Footer {
+      padding-inline: var(--size-7);
     }
   }
 </style>

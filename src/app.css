@@ -105,6 +105,12 @@ html {
   background-attachment: fixed;
 }
 
+@media (max-width: 450px) {
+  p {
+    font-size: var(--size-fluid-2);
+  }
+}
+
 img {
   border-radius: var(--radius-3);
 }

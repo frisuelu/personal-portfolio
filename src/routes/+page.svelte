@@ -20,7 +20,7 @@
   <section id="hero" class="hero">
     <div class="hero-content">
       <h1>Manuel Souto Juan</h1>
-      <h3>Lead Data Scientist based in Spain</h3>
+      <h3>Data Scientist</h3>
     </div>
     <div class="image">
       <img src="images/landing/me.jpg" alt="Manuel Souto Juan" />
@@ -41,10 +41,9 @@
 
   <div class="prose">
     <p>
-      Hi there! My name is Manuel, and I am a Lead Data Scientist based in Gijón
-      (Spain). I am currently working at a small DS consulting firm called <a
-        href="https://www.bedrockdbd.com">Bedrock</a
-      >.
+      Hi there! My name is Manuel, and I am a Data Scientist based in Gijón
+      (Spain). I am currently working as Tech Lead at a small DS consulting firm
+      called <a href="https://www.bedrockdbd.com">Bedrock</a>.
     </p>
     <p>
       My main focus is leading the technical development of Data Science and AI
@@ -133,6 +132,11 @@
     text-align: center;
   }
 
+  .hero-content :is(h1) {
+    font-family: fantasy;
+    font-style: italic;
+  }
+
   .image {
     margin-left: 20px;
   }
@@ -160,7 +164,7 @@
     gap: var(--size-7);
   }
 
-  a {
+  .icons a {
     color: inherit;
     text-decoration: none;
   }

@@ -33,6 +33,7 @@
     "images/tools/azure-Blob-Block.svg",
     "images/tools/Azure-Container-Instances.svg",
     "images/tools/Azure-Container-Registries.svg",
+    "images/tools/AzureML.png",
     "images/tools/bash.svg",
     "images/tools/big-query.png",
     "images/tools/cloud-functions.png",
@@ -98,7 +99,7 @@
 </div>
 
 <div align="center">
-  <h3><br />Companies and institutions I have collaborated with</h3>
+  <h5><br /><i>Companies and institutions I have collaborated with</i></h5>
   <ImageCarousel
     images={client_logos}
     particlesShown={3}
@@ -109,7 +110,7 @@
 <div class="exp-block">
   <div class="prose">
     <h3>
-      <b><br />Relevant experience</b>
+      <b>Relevant experience</b>
     </h3>
     <p>
       I have been working as the core Data Scientist at Bedrock for almost three
@@ -151,7 +152,7 @@
       internationally-based.
     </p>
   </div>
-  <div class="tool-block">
+  <div class="tool-block prose">
     <h3>Tools and platforms I am proficient in</h3>
     <div class="tool-grid">
       <ToolGrid images={tool_logos} gutterSize={30} columnNumber={8} />
@@ -165,22 +166,37 @@
 </div>
 
 <style>
+  .landing_title {
+    padding-bottom: var(--size-3);
+  }
+
   .exp-block {
     display: flex;
     flex-direction: row;
-    column-gap: var(--size-fluid-5);
+    column-gap: var(--size-fluid-4);
     align-items: center;
     justify-content: center;
+  }
+
+  .exp-block h3 {
+    margin-top: var(--size-1);
+  }
+
+  @media (max-width: 768px) {
+    .exp-block {
+      display: block;
+      align-items: start;
+    }
   }
 
   .prose,
   .tool-block {
     flex: 1;
-    padding: var(--size-fluid-5);
+    padding: var(--size-fluid-3);
   }
 
   .tool-grid {
-    margin-top: var(--size-fluid-3);
+    margin-top: var(--size-fluid-1);
     width: 0.5fr;
   }
 </style>

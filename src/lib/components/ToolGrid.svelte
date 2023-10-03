@@ -25,9 +25,8 @@
 </script>
 
 <Grid container gutter={gutterSize} columns={columnNumber}>
-  <!-- New item -->
   {#each images as logo, idx}
-    <Grid>
+    <Grid xs={1} lg={1}>
       <img
         class="logo"
         src={logo}
@@ -43,9 +42,21 @@
     width: var(--size-10);
     height: var(--size-10);
     object-fit: contain;
-    background-color: var(--text-1);
+    border: 3px solid var(--text-1);
     border-radius: var(--radius-3);
     padding: var(--size-1);
+  }
+
+@media (prefers-color-scheme: light) {
+    .logo {
+      background-color: var(--text-1);
+    }
+  }
+
+@media (prefers-color-scheme: dark) {
+    .logo {
+      background-color: var(--gray-1);
+    }
   }
 
   @media (max-width: 768px) {
