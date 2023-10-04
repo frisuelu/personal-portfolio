@@ -22,20 +22,54 @@
   // Grid params
   export let gutterSize;
   export let columnNumber;
+
+  // To bind the client width
+  let W;
 </script>
 
-<Grid container gutter={gutterSize} columns={columnNumber}>
-  {#each images as logo, idx}
-    <Grid xs={1} lg={1}>
-      <img
-        class="logo"
-        src={logo}
-        alt={toolNames[idx]}
-        title={toolNames[idx]}
-      />
+<!-- autodetect client width and height to adjust -->
+<div bind:clientWidth={W}>
+  {#if W < 768}
+    <Grid container gutter={gutterSize} columns={columnNumber/3}>
+      {#each images as logo, idx}
+        <Grid>
+          <img
+            class="logo"
+            src={logo}
+            alt={toolNames[idx]}
+            title={toolNames[idx]}
+          />
+        </Grid>
+      {/each}
     </Grid>
-  {/each}
-</Grid>
+  {:else if W > 768 & W < 1200}
+    <Grid container gutter={gutterSize} columns={columnNumber - 1}>
+      {#each images as logo, idx}
+        <Grid>
+          <img
+            class="logo"
+            src={logo}
+            alt={toolNames[idx]}
+            title={toolNames[idx]}
+          />
+        </Grid>
+      {/each}
+    </Grid>
+  {:else}
+    <Grid container gutter={gutterSize} columns={columnNumber}>
+      {#each images as logo, idx}
+        <Grid>
+          <img
+            class="logo"
+            src={logo}
+            alt={toolNames[idx]}
+            title={toolNames[idx]}
+          />
+        </Grid>
+      {/each}
+    </Grid>
+  {/if}
+</div>
 
 <style>
   .logo {
@@ -47,22 +81,15 @@
     padding: var(--size-1);
   }
 
-@media (prefers-color-scheme: light) {
+  @media (prefers-color-scheme: light) {
     .logo {
       background-color: var(--text-1);
     }
   }
 
-@media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     .logo {
       background-color: var(--gray-1);
-    }
-  }
-
-  @media (max-width: 768px) {
-    .logo {
-      width: var(--size-8);
-      height: var(--size-8);
     }
   }
 </style>

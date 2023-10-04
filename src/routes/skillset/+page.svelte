@@ -155,7 +155,7 @@
   <div class="tool-block prose">
     <h3>Tools and platforms I am proficient in</h3>
     <div class="tool-grid">
-      <ToolGrid images={tool_logos} gutterSize={30} columnNumber={8} />
+      <ToolGrid images={tool_logos} gutterSize={30} columnNumber={3} />
       <p>
         <small
           >Most tool icons by <a href="https://icons8.com/">Icons8</a></small
