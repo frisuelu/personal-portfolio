@@ -23,7 +23,7 @@
       <h3>Data Scientist</h3>
     </div>
     <div class="image">
-      <img src="images/landing/me.jpg" alt="Manuel Souto Juan" />
+      <img src="images/landing/me_2.jpg" alt="Manuel Souto Juan" />
     </div>
   </section>
 
@@ -115,6 +115,7 @@
   section {
     margin-top: var(--size-fluid-5);
     margin-bottom: var(--size-fluid-5);
+    justify-content: center;
   }
 
   .hero {
@@ -138,13 +139,13 @@
   }
 
   .image {
-    margin-left: 20px;
+    margin-left: 50px;
   }
 
   .image img {
-    max-width: 100%;
+    flex: 1;
     height: auto;
-    border-radius: 50%;
+    width: 400px;
   }
 
   @media (max-width: 768px) {
