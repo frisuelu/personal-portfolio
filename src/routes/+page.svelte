@@ -42,19 +42,21 @@
   <div class="prose">
     <p>
       Hi there! My name is Manuel, and I am a Data Scientist based in Gijón
-      (Spain). I am currently working as Tech Lead at a small DS consulting firm
-      called <a href="https://www.bedrockdbd.com">Bedrock</a>.
+      (Spain). I am currently working as Data Scientist at <a
+        href="https://decidesoluciones.es/">Decide4AI</a
+      >.
     </p>
     <p>
       My main focus is leading the technical development of Data Science and AI
       projects for our clients, while navigating their requirements and reaching
-      the perfect solution suited for them.
+      the perfect solution suited for them. I have worked for different clients
+      in many industries, spanning the <b>marketing & media</b>,
+      <b>sports</b>, <b>industrial</b> or <b>retail</b> sectors, among others.
     </p>
     <p>
-      I have worked for different clients in many industries, spanning the <b
-        >marketing & media</b
-      >,
-      <b>sports</b> and <b>industrial</b> sectors, among others.
+      I have also worked for a startup DS consulting firm based in Gijón called <a
+        href="https://bedrockdbd.com/">Bedrock</a
+      >.
     </p>
     <p>Check more about me in the following sections! 👇</p>
   </div>

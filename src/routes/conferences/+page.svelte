@@ -60,6 +60,30 @@
 <!-- https://media.licdn.com/dms/image/D4D22AQGRm2KFmJiPWw/feedshare-shrink_1280/0/1680681504991?e=1698883200&v=beta&t=hG4qSH5Vo0l88rfCTYCHhxrYSwlarKy64_Ewn0-UmEI -->
 <!-- https://media.licdn.com/dms/image/C4E22AQGA3tgYWpvNZQ/feedshare-shrink_800/0/1665670942087?e=1698883200&v=beta&t=XMvn2A57Koj1W6l8HZ-UqYvsjxGAjduuMKrabWaYwHU -->
 
+<div align="center" class="half_text">
+  <div align="left" class="prose">
+    <h2>PyConES 2024</h2>
+    <p>
+      <br />I have attended the 2024 edition of the national Python conferences
+      in Vigo. Together with my Decide4AI colleague
+      <a
+        href="https://www.linkedin.com/in/ricardo-fern%C3%A1ndez-jim%C3%A9nez-b01297130/"
+        title="LinkedIn profile">Ricardo Fernández</a
+      >, we have presented a chat on <i>Physics-Informed Neural Networks</i> or PINNs
+      for short as a means for analysing complex physical systems leveraging AI.
+    </p>
+    <p><b>FILL WHEN DONE</b></p>
+  </div>
+  <div class="individual_video">
+    <Grid container>
+      <YoutubePlaylistEmbed
+        playlistSrc="---"
+        playlist_title="PINNs recording"
+      />
+    </Grid>
+  </div>
+</div>
+
 <div class="centered_grid" align="center">
   <div class="prose">
     <h2>DATAfórum 2023</h2>

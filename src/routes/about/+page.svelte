@@ -23,8 +23,8 @@
 <div class="prose" align="center">
   <p>
     <br />Hi! My name is Manuel, and I’m a Data Scientist based in Spain. I was
-    born on November 8th, 1996 in northern Spain (in a little green place called
-    Asturias) where I currently live at.
+    born in 1996 in northern Spain (in a little green place called Asturias)
+    where I currently live at.
   </p>
   <p>
     As all kids do, I was fascinated from a young age about everything; the
@@ -84,8 +84,9 @@
     Afterwards, I got my first position at <a
       href="https://www.bedrockdbd.com"
       title="Bedrock - Humanised Intelligence">Bedrock</a
-    >, a small Data Science consulting firm in Asturias, where I have been
-    working for almost three years now.
+    >, a small Data Science consulting firm in Asturias, where I spent three
+    years and later changed to a similar position in
+    <a href="https://www.decidesoluciones.es" title="Decide4AI">Decide4AI</a>.
   </p>
   <h2>And I also have a life outside of work 😉</h2>
   <p>
@@ -104,8 +105,8 @@
     delved into embedded devices, IoT and microcontrollers; for example,
     interconnecting several devices using the MQTT protocol to deliver real-time
     sensor outputs to a physical LED dashboard for further analysis. Check all
-    of these and more in the <a href="{base}/projects">projects</a> folder if you haven't
-    yet!
+    of these and more in the <a href="{base}/projects">projects</a> folder if you
+    haven't yet!
   </p>
   <p>
     As a matter of fact, this website you're reading went through many

@@ -14,6 +14,7 @@
     "http://cdn.20m.es/img2/recortes/2017/04/10/456501-944-737.jpg?v=20170410191800",
     "https://mia.as/images/nodes/logocdti.jpg",
     "https://sede.idepa.es/assets/img/sekuensprincipado.jpg",
+    "https://www.rbiberia.com/rbi_logo.svg",
   ];
 
   // Tool logos in static folder (note this uses Vite, which returns a dictionary
@@ -113,16 +114,15 @@
       <b>Relevant experience</b>
     </h3>
     <p>
-      I have been working as the core Data Scientist at Bedrock for almost three
-      years now. One of the most important learnings of working at a startup
-      company is that, even as part of the technical team, you are also involved
-      in a lot of other core business areas that are not usually part of their
-      area of expertise: <i>finance</i>,
+      My experience as a Data Scientist for almost four years in both bigger companies
+      and startups has prepared me transversally. One of the most important learnings
+      has been that, even as part of the technical team, you are also involved in a lot
+      of other core business areas that are not usually part of your expertise:
+      <i>finance</i>,
       <i>new business/commercial meetings</i>,
-      <i>client services</i>... This means my job is not just the development of
-      the technical solutions, but actually enaging with clients, proposing new
-      ideas, client acquisition and new business opportunities, or CRM
-      management, among others.
+      <i>client services</i>...
+      This means my job is not just the development of the technical solutions, but
+      actually engaging with clients and proposing new ideas.
     </p>
     <p>
       The most important takeaway from this experience is that I've learnt
