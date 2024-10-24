@@ -23,7 +23,7 @@
       <h3>Data Scientist</h3>
     </div>
     <div class="image">
-      <img src="images/landing/me_2.jpg" alt="Manuel Souto Juan" />
+      <img src="/personal-portfolio/images/landing/me_2.jpg" alt="Manuel Souto Juan" />
     </div>
   </section>
 
