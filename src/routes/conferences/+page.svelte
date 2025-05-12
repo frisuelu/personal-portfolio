@@ -72,13 +72,12 @@
       >, we have presented a chat on <i>Physics-Informed Neural Networks</i> or PINNs
       for short as a means for analysing complex physical systems leveraging AI.
     </p>
-    <p><b>FILL WHEN DONE</b></p>
   </div>
   <div class="individual_video">
     <Grid container>
-      <YoutubePlaylistEmbed
-        playlistSrc="---"
-        playlist_title="PINNs recording"
+      <YoutubeEmbed
+        src="https://youtu.be/1YM4r8zdWdM"
+        video_title="PINNs recording"
       />
     </Grid>
   </div>
