@@ -1,3 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://frisuelu.github.io/personal-portfolio/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

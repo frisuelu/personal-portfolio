@@ -9,19 +9,33 @@ export const GET = async ({ fetch }) => {
 
   try {
     const response = await fetch(
-      `https://api.github.com/users/${username}/repos`
+      `https://api.github.com/users/${username}/repos?sort=updated&per_page=10`
     );
 
     if (!response.ok) {
-      throw new Error("Failed to fetch repositories");
+      throw new Error(`GitHub API responded with status: ${response.status}`);
     }
 
     const repositories = await response.json();
 
-    return json(repositories);
+    // Filter and sort repositories
+    const filteredRepos = repositories
+      .filter(repo => !repo.fork && repo.description) // Only non-forked repos with descriptions
+      .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
+      .slice(0, 6); // Limit to 6 most recent
+
+    return json({
+      success: true,
+      data: filteredRepos,
+      total: repositories.length
+    });
   } catch (error) {
-    // Handle any errors here
-    console.error(`Error loading GitHub repositories /: ${error}`);
-    return null; // Return an empty array in case of an error
+    console.error(`Error loading GitHub repositories: ${error.message}`);
+    
+    return json({
+      success: false,
+      error: "Failed to fetch repositories",
+      message: error.message
+    }, { status: 500 });
   }
 };
