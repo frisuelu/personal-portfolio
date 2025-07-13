@@ -4,7 +4,7 @@
 </script>
 
 <link
-  href="https://github.com/PrismJS/prism-themes/themes/prism-dracula.css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-dracula.min.css"
   rel="stylesheet"
 />
 

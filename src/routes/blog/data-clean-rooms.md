@@ -2,7 +2,7 @@
 title: Data Clean Rooms - the key to marketing success
 subtitle: Data-driven marketing strategies employing new cookie-less approaches
 date: "2023-01-24"
-thumbnail_url: "/images/data-clean-rooms.jpg"
+thumbnail_url: "images/data-clean-rooms.jpg"
 thumbnail_alt: Data Clean Rooms
 media: Posted on Medium
 ---
