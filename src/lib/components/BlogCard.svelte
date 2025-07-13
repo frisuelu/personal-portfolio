@@ -50,6 +50,13 @@
     object-fit: cover;
   }
 
+  .blog_thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-2);
+  }
+
   .blog_content {
     flex: 1; /* Allow the content to expand and fill the available space */
   }
@@ -63,6 +70,13 @@
       height: var(--size-fluid-8);
       width: var(--size-fluid-10);
       align-items: center;
+    }
+    
+    .blog_thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--radius-2);
     }
     .container {
       width: 70%;
