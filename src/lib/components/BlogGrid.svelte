@@ -18,7 +18,7 @@
         title={post.meta.title}
         subtitle={post.meta.subtitle}
         date={post.meta.date}
-        thumbnail_url={post.meta.thumbnail_url}
+        thumbnail_url={post.meta.thumbnail_url.startsWith('http') ? post.meta.thumbnail_url : base + post.meta.thumbnail_url}
         thumbnail_alt={post.meta.thumbnail_alt}
         article_url={base + post.path}
         media={post.meta.media}
