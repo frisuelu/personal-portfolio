@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   import ImageCarousel from "$lib/components/ImageCarousel.svelte";
   import ToolGrid from "$lib/components/ToolGrid.svelte";
 
@@ -17,63 +18,53 @@
     "https://www.rbiberia.com/rbi_logo.svg",
   ];
 
-  // Tool logos in static folder (note this uses Vite, which returns a dictionary
-  // with string keys and function values)
-  // TODO: fix why the static/ path is not working
-  // const tools = import.meta.glob("/images/tools/*.{svg,png,jpg}");
-  // let tool_logos = [];
-
-  // for (const modulePath in tools) {
-  //   tool_logos.push(tools[modulePath].default);
-  // }
-
-  // Workaround, but obviously the glob option is best...
+  // Tool logos with base path
   let tool_logos = [
-    "images/tools/apache-superset.png",
-    "images/tools/arduino.svg",
-    "images/tools/azure-Blob-Block.svg",
-    "images/tools/Azure-Container-Instances.svg",
-    "images/tools/Azure-Container-Registries.svg",
-    "images/tools/AzureML.png",
-    "images/tools/bash.svg",
-    "images/tools/big-query.png",
-    "images/tools/cloud-functions.png",
-    "images/tools/CSS.png",
-    "images/tools/dask.png",
-    "images/tools/databricks.jpg",
-    "images/tools/docker.svg",
-    "images/tools/flask.png",
-    "images/tools/github.svg",
-    "images/tools/gitlab.svg",
-    "images/tools/git.svg",
-    "images/tools/go-lang.svg",
-    "images/tools/google-cloud-storage.png",
-    "images/tools/HTML.png",
-    "images/tools/hubspot.png",
-    "images/tools/HuggingFace.svg",
-    "images/tools/JavaScript.svg",
-    "images/tools/looker-studio.svg",
-    "images/tools/matlab.jpg",
-    "images/tools/metabase.png",
-    "images/tools/mySQL.png",
-    "images/tools/numpy.svg",
-    "images/tools/NVIDIA-Merlin.jpg",
-    "images/tools/NVIDIA-RAPIDS.png",
-    "images/tools/NVIDIA-triton-inference-server.png",
-    "images/tools/octave.png",
-    "images/tools/openCV.svg",
-    "images/tools/pandas.svg",
-    "images/tools/postgreSQL.svg",
-    "images/tools/python.svg",
-    "images/tools/pytorch-lightning.png",
-    "images/tools/PyTorch.svg",
-    "images/tools/r.png",
-    "images/tools/SPSS.jpg",
-    "images/tools/svelte.svg",
-    "images/tools/tensorflow.svg",
-    "images/tools/TinyGo.png",
-    "images/tools/vim.png",
-    "images/tools/visual-studio.svg",
+    `${base}/images/tools/apache-superset.png`,
+    `${base}/images/tools/arduino.svg`,
+    `${base}/images/tools/azure-Blob-Block.svg`,
+    `${base}/images/tools/Azure-Container-Instances.svg`,
+    `${base}/images/tools/Azure-Container-Registries.svg`,
+    `${base}/images/tools/AzureML.png`,
+    `${base}/images/tools/bash.svg`,
+    `${base}/images/tools/big-query.png`,
+    `${base}/images/tools/cloud-functions.png`,
+    `${base}/images/tools/CSS.png`,
+    `${base}/images/tools/dask.png`,
+    `${base}/images/tools/databricks.jpg`,
+    `${base}/images/tools/docker.svg`,
+    `${base}/images/tools/flask.png`,
+    `${base}/images/tools/github.svg`,
+    `${base}/images/tools/gitlab.svg`,
+    `${base}/images/tools/git.svg`,
+    `${base}/images/tools/go-lang.svg`,
+    `${base}/images/tools/google-cloud-storage.png`,
+    `${base}/images/tools/HTML.png`,
+    `${base}/images/tools/hubspot.png`,
+    `${base}/images/tools/HuggingFace.svg`,
+    `${base}/images/tools/JavaScript.svg`,
+    `${base}/images/tools/looker-studio.svg`,
+    `${base}/images/tools/matlab.jpg`,
+    `${base}/images/tools/metabase.png`,
+    `${base}/images/tools/mySQL.png`,
+    `${base}/images/tools/numpy.svg`,
+    `${base}/images/tools/NVIDIA-Merlin.jpg`,
+    `${base}/images/tools/NVIDIA-RAPIDS.png`,
+    `${base}/images/tools/NVIDIA-triton-inference-server.png`,
+    `${base}/images/tools/octave.png`,
+    `${base}/images/tools/openCV.svg`,
+    `${base}/images/tools/pandas.svg`,
+    `${base}/images/tools/postgreSQL.svg`,
+    `${base}/images/tools/python.svg`,
+    `${base}/images/tools/pytorch-lightning.png`,
+    `${base}/images/tools/PyTorch.svg`,
+    `${base}/images/tools/r.png`,
+    `${base}/images/tools/SPSS.jpg`,
+    `${base}/images/tools/svelte.svg`,
+    `${base}/images/tools/tensorflow.svg`,
+    `${base}/images/tools/TinyGo.png`,
+    `${base}/images/tools/vim.png`,
+    `${base}/images/tools/visual-studio.svg`,
   ];
 </script>
 

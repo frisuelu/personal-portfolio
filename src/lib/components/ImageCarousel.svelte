@@ -8,9 +8,12 @@
   // So the showcase can adapt to the number of elements
   export let particlesShown = 1;
   export let particlesScrolled = 1;
+
+  // Filter out any invalid image paths
+  $: validImages = images ? images.filter(img => img && img.trim() !== '') : [];
 </script>
 
-{#if browser}
+{#if browser && validImages.length > 0}
   <Carousel
     let:loaded
     autoplay
@@ -22,14 +25,25 @@
     particlesToShow={particlesShown}
     particlesToScroll={particlesScrolled}
   >
-    {#each images as src, imageIndex (src)}
+    {#each validImages as src, imageIndex (src)}
       <div class="img-container">
         {#if loaded.includes(imageIndex)}
-          <img {src} alt="Carousel - Photo {imageIndex}" />
+          <img 
+            {src} 
+            alt="Carousel - Photo {imageIndex}" 
+            on:error={(e) => {
+              console.warn(`Failed to load image: ${src}`);
+              e.target.style.display = 'none';
+            }}
+          />
         {/if}
       </div>
     {/each}
   </Carousel>
+{:else if browser && (!validImages || validImages.length === 0)}
+  <div class="no-images">
+    <p>No images available</p>
+  </div>
 {/if}
 
 <style>
@@ -47,5 +61,12 @@
   .img-container img {
     max-height: 80%;
     max-width: 80%;
+    object-fit: contain;
+  }
+
+  .no-images {
+    text-align: center;
+    padding: var(--size-fluid-4);
+    color: var(--text-2);
   }
 </style>

@@ -31,12 +31,37 @@
   </p>
 </div>
 
-<div align="center">
-  <BlogGrid posts={data.posts} />
-</div>
+{#if data.error}
+  <div class="error-message">
+    <p>⚠️ Unable to load blog posts at the moment. Please try again later.</p>
+    <p><small>Error: {data.error}</small></p>
+  </div>
+{:else if data.posts && data.posts.length > 0}
+  <div align="center">
+    <BlogGrid posts={data.posts} />
+  </div>
+{:else}
+  <div class="loading-message">
+    <p>Loading blog posts...</p>
+  </div>
+{/if}
 
 <style>
   .landing_title {
     padding-bottom: var(--size-fluid-5);
+  }
+
+  .error-message {
+    text-align: center;
+    padding: var(--size-fluid-4);
+    background-color: var(--surface-2);
+    border-radius: var(--radius-3);
+    margin: var(--size-fluid-3) 0;
+  }
+
+  .loading-message {
+    text-align: center;
+    padding: var(--size-fluid-4);
+    color: var(--text-2);
   }
 </style>

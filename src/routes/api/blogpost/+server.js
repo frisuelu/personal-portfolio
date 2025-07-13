@@ -14,8 +14,18 @@ export const GET = async () => {
       return new Date(b?.meta?.date) - new Date(a?.meta?.date);
     });
 
-    return json(sortedPosts);
+    return json({
+      success: true,
+      data: sortedPosts,
+      total: sortedPosts.length
+    });
   } catch (error) {
-    console.error(`Error retrieving .md posts /: ${error}`);
+    console.error(`Error retrieving .md posts: ${error.message}`);
+    
+    return json({
+      success: false,
+      error: "Failed to fetch blog posts",
+      message: error.message
+    }, { status: 500 });
   }
 };

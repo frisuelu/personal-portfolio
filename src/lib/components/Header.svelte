@@ -3,7 +3,7 @@
   import Toggle from "$lib/components/ThemeToggle.svelte";
 </script>
 
-<nav role="navigation" aria-label="Main navigation">
+<nav aria-label="Main navigation">
   <!-- Title -->
   <a href="{base}/" class="title" aria-label="Go to homepage">
     <b>Personal Portfolio</b>

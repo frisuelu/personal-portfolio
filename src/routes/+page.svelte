@@ -24,7 +24,7 @@
     </div>
     <div class="image">
       <img 
-        src="/personal-portfolio/images/landing/me_2.jpg" 
+        src="{base}/images/landing/me_2.jpg" 
         alt="Manuel Souto Juan - Data Scientist" 
         loading="eager"
         width="400"

@@ -1,14 +1,34 @@
 /** @type {import('./$types').PageLoad} */
-export const load = async ({ fetch }) => {
+export const load = async ({ fetch, url }) => {
   try {
-    const response = await fetch(`/personal-portfolio/api/github-repos`);
-    //const response = await fetch(`/api/github-repos`);
-    const repos = await response.json();
+    // Use relative path for development, full path for production
+    const apiPath = url.pathname.includes('/personal-portfolio') 
+      ? '/personal-portfolio/api/github-repos'
+      : '/api/github-repos';
+      
+    const response = await fetch(apiPath);
+    const result = await response.json();
 
-    return {
-      repos,
-    };
+    // Handle the new API response structure
+    if (result.success && result.data) {
+      return {
+        repos: result.data,
+        total: result.total
+      };
+    } else {
+      console.error('GitHub API returned error:', result.error);
+      return {
+        repos: [],
+        total: 0,
+        error: result.error || 'Failed to fetch repositories'
+      };
+    }
   } catch (error) {
-    console.error(`Error fetching repo internal API : ${error}`);
+    console.error(`Error fetching repo internal API: ${error}`);
+    return {
+      repos: [],
+      total: 0,
+      error: 'Failed to fetch repositories'
+    };
   }
 };

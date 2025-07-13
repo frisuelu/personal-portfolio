@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   import { Github } from "lucide-svelte";
 
   export let repo_name;
@@ -8,7 +9,7 @@
 
 <div>
   <div>
-    <img class="thumbnail" src="images/repos/{repo_name}.jpg" alt="Thumbnail" />
+    <img class="thumbnail" src="{base}/images/repos/{repo_name}.jpg" alt="Thumbnail" />
   </div>
   <div align="center" class="prose">
     <div class="repo_header">
