@@ -20,6 +20,13 @@ const config = {
     },
   },
   extensions: [".svelte", ".md"],
-  preprocess: [sveltePreprocess(), mdsvex({ extensions: [".md"] })],
+  preprocess: [
+    sveltePreprocess(), 
+    mdsvex({ 
+      extensions: [".md"],
+      remarkPlugins: [],
+      rehypePlugins: []
+    })
+  ],
 };
 export default config;

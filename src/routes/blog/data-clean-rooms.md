@@ -11,7 +11,7 @@ media: Posted on Medium
 
 ### Unlock the full potential of your data and remain compliant for a data-driven marketing strategy
 
-![Data Clean Rooms thumbnail](/images/data-clean-rooms.jpg)
+![Data Clean Rooms thumbnail](/personal-portfolio/images/data-clean-rooms.jpg)
 
 ---
 
